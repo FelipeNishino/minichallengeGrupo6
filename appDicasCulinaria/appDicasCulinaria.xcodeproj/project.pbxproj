@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83ECAFF52444FC3500F9EC05 /* telaFAQ.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFF42444FC3500F9EC05 /* telaFAQ.storyboard */; };
 		E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B0243CFBEE00507D29 /* AppDelegate.swift */; };
 		E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B2243CFBEE00507D29 /* SceneDelegate.swift */; };
 		E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B4243CFBEE00507D29 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83ECAFF42444FC3500F9EC05 /* telaFAQ.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ.storyboard; sourceTree = "<group>"; };
 		E25583AD243CFBEE00507D29 /* appDicasCulinaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDicasCulinaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583B0243CFBEE00507D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25583B2243CFBEE00507D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
+				83ECAFF42444FC3500F9EC05 /* telaFAQ.storyboard */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
@@ -235,6 +238,7 @@
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
+				83ECAFF52444FC3500F9EC05 /* telaFAQ.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
