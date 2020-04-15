@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83ECAFF52444FC3500F9EC05 /* telaFAQ.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ECAFF42444FC3500F9EC05 /* telaFAQ.storyboard */; };
+		83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */; };
+		83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */; };
+		83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */; };
 		E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B0243CFBEE00507D29 /* AppDelegate.swift */; };
 		E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B2243CFBEE00507D29 /* SceneDelegate.swift */; };
 		E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B4243CFBEE00507D29 /* ViewController.swift */; };
@@ -36,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		83ECAFF42444FC3500F9EC05 /* telaFAQ.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ.storyboard; sourceTree = "<group>"; };
+		83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ2.storyboard; sourceTree = "<group>"; };
+		83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableController.swift; sourceTree = "<group>"; };
+		83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableViewCell.swift; sourceTree = "<group>"; };
 		E25583AD243CFBEE00507D29 /* appDicasCulinaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDicasCulinaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583B0243CFBEE00507D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25583B2243CFBEE00507D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,8 +108,10 @@
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
+				83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */,
+				83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */,
+				83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
-				83ECAFF42444FC3500F9EC05 /* telaFAQ.storyboard */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
@@ -237,8 +243,8 @@
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
+				83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
-				83ECAFF52444FC3500F9EC05 /* telaFAQ.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +271,8 @@
 			files = (
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
+				83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */,
+				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = appDicasCulinaria/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = appDicasCulinaria/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +485,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = appDicasCulinariaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +506,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = appDicasCulinariaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,6 +526,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = appDicasCulinariaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,6 +546,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = appDicasCulinariaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
