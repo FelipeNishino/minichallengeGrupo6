@@ -21,5 +21,9 @@ class FAQ2TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+  
     @IBOutlet weak var lbl_CellTitle: UILabel!
+    
+   
+    
 }

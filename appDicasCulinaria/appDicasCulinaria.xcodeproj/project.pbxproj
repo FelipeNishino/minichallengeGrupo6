@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831DA55F2448E2CE00EA1F1E /* telaFAQ3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831DA55E2448E2CE00EA1F1E /* telaFAQ3.storyboard */; };
+		831DA5612448E3CB00EA1F1E /* DataFAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831DA5602448E3CB00EA1F1E /* DataFAQ.swift */; };
+		831DA5632448E5A200EA1F1E /* FAQQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831DA5622448E5A200EA1F1E /* FAQQuestionView.swift */; };
+		831DA5652448ECCB00EA1F1E /* FAQ3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831DA5642448ECCB00EA1F1E /* FAQ3ViewController.swift */; };
 		83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */; };
 		83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */; };
 		83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		831DA55E2448E2CE00EA1F1E /* telaFAQ3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ3.storyboard; sourceTree = "<group>"; };
+		831DA5602448E3CB00EA1F1E /* DataFAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFAQ.swift; sourceTree = "<group>"; };
+		831DA5622448E5A200EA1F1E /* FAQQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQQuestionView.swift; sourceTree = "<group>"; };
+		831DA5642448ECCB00EA1F1E /* FAQ3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ3ViewController.swift; sourceTree = "<group>"; };
 		83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ2.storyboard; sourceTree = "<group>"; };
 		83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableController.swift; sourceTree = "<group>"; };
 		83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableViewCell.swift; sourceTree = "<group>"; };
@@ -82,6 +90,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831DA56624491B5F00EA1F1E /* telaFAQ2 */ = {
+			isa = PBXGroup;
+			children = (
+				83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */,
+				83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */,
+				83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */,
+			);
+			path = telaFAQ2;
+			sourceTree = "<group>";
+		};
+		831DA56724491B7900EA1F1E /* telaFAQ3 */ = {
+			isa = PBXGroup;
+			children = (
+				831DA55E2448E2CE00EA1F1E /* telaFAQ3.storyboard */,
+				831DA5622448E5A200EA1F1E /* FAQQuestionView.swift */,
+				831DA5642448ECCB00EA1F1E /* FAQ3ViewController.swift */,
+				831DA5602448E3CB00EA1F1E /* DataFAQ.swift */,
+			);
+			path = telaFAQ3;
+			sourceTree = "<group>";
+		};
 		E25583A4243CFBEE00507D29 = {
 			isa = PBXGroup;
 			children = (
@@ -108,9 +137,8 @@
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
-				83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */,
-				83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */,
-				83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */,
+				831DA56624491B5F00EA1F1E /* telaFAQ2 */,
+				831DA56724491B7900EA1F1E /* telaFAQ3 */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
@@ -243,6 +271,7 @@
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
+				831DA55F2448E2CE00EA1F1E /* telaFAQ3.storyboard in Resources */,
 				83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
 			);
@@ -270,9 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
+				831DA5612448E3CB00EA1F1E /* DataFAQ.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */,
 				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
+				831DA5652448ECCB00EA1F1E /* FAQ3ViewController.swift in Sources */,
+				831DA5632448E5A200EA1F1E /* FAQQuestionView.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
