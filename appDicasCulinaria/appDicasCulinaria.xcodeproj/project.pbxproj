@@ -15,6 +15,8 @@
 		E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */; };
 		E25583C8243CFBF200507D29 /* appDicasCulinariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583C7243CFBF200507D29 /* appDicasCulinariaTests.swift */; };
 		E25583D3243CFBF200507D29 /* appDicasCulinariaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */; };
+		E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B959F2448FE0700EFA536 /* customBtn.swift */; };
+		E28B95A22449015200EFA536 /* customBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28B95A12449015200EFA536 /* customBtn.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E25583CE243CFBF200507D29 /* appDicasCulinariaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appDicasCulinariaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDicasCulinariaUITests.swift; sourceTree = "<group>"; };
 		E25583D4243CFBF200507D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28B959F2448FE0700EFA536 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
+		E28B95A12449015200EFA536 /* customBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customBtn.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
+				E28B959F2448FE0700EFA536 /* customBtn.swift */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
+				E28B95A12449015200EFA536 /* customBtn.xib */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
@@ -233,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
+				E28B95A22449015200EFA536 /* customBtn.xib in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
+				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
 			);
