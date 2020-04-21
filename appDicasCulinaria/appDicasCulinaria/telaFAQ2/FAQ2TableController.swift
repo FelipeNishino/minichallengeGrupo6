@@ -21,9 +21,9 @@ class FAQ2TableController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableData = [cellData(isOpen: false, question: "Pergunta 1", answer: ["Resposta 1"]),
-                     cellData(isOpen: false, question: "Pergunta 2", answer: ["Resposta 2"]),
-                     cellData(isOpen: false, question: "Pergunta 3", answer: ["Resposta 3"])]
+        tableData = [cellData(isOpen: false, question: "Posso enviar minha próprias dicas?", answer: ["", "No momento ainda não é possível, talvez no futuro isso seja uma funcionalidade."]),
+                     cellData(isOpen: false, question: "Como editar meus interesses?", answer: ["", "Para editar seus interesses, basta ir até a tela de Perfil e selecionar Editar interesses. Depois selecione os assuntos de sua preferência e toque em Salvar."]),
+                     cellData(isOpen: false, question: "Como faço uma pesquisa?", answer: ["", "Basta acessar acessar a tela Pesquisar e digitar o termo que procura ou selecionar uma palavra-chave"])]
         
     }
     
@@ -50,6 +50,8 @@ class FAQ2TableController: UITableViewController {
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FAQ2TableViewCell
             cell.lbl_CellTitle.text = tableData[indexPath.section].answer[indexPath.row]
+            cell.lbl_CellTitle.lineBreakMode = .byWordWrapping
+            cell.lbl_CellTitle.numberOfLines = 0
             return cell
         }
      }
@@ -69,5 +71,13 @@ class FAQ2TableController: UITableViewController {
                        
                        tableView.reloadSections(section, with: .none)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableData[indexPath.section].isOpen{
+            return 80
+        }else{
+            return 40
+    }
     }
 }
