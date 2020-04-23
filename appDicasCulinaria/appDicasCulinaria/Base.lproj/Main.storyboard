@@ -15,14 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgd-5P-lQ9">
-                                <rect key="frame" x="188" y="417" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FAQ3"/>
-                                <connections>
-                                    <segue destination="Feg-wT-imf" kind="show" id="mgU-P8-1fy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUD-Dp-whN">
                                 <rect key="frame" x="188" y="325" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,16 +41,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gi-QW-xf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="946" y="34"/>
-        </scene>
-        <!--FAQ3VC-->
-        <scene sceneID="A7t-JJ-hBz">
-            <objects>
-                <viewControllerPlaceholder storyboardName="telaFAQ3" referencedIdentifier="FAQ3VC" id="Feg-wT-imf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Clc-ia-wCp"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jZ0-Zx-YZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="948" y="106"/>
         </scene>
     </scenes>
 </document>
