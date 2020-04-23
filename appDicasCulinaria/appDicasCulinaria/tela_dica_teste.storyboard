@@ -29,7 +29,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqM-nr-Twn">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JU5-ZU-8J2">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JU5-ZU-8J2">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -44,21 +44,16 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="JU5-ZU-8J2" firstAttribute="top" secondItem="wqM-nr-Twn" secondAttribute="top" id="0u5-lj-v1a"/>
-                                            <constraint firstAttribute="trailing" secondItem="JU5-ZU-8J2" secondAttribute="trailing" id="dmf-OJ-KYn"/>
-                                            <constraint firstAttribute="height" constant="1000" id="lCX-D6-T6w"/>
-                                            <constraint firstItem="JU5-ZU-8J2" firstAttribute="leading" secondItem="wqM-nr-Twn" secondAttribute="leading" id="mEa-Ei-WeO"/>
-                                            <constraint firstItem="JU5-ZU-8J2" firstAttribute="width" secondItem="wqM-nr-Twn" secondAttribute="width" id="y7t-eI-AaP"/>
+                                            <constraint firstAttribute="height" constant="1000" id="Xh3-Kr-55g"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="width" secondItem="aL4-sR-0z8" secondAttribute="width" id="EWw-3o-BuW"/>
-                                    <constraint firstItem="aL4-sR-0z8" firstAttribute="bottom" secondItem="wqM-nr-Twn" secondAttribute="bottom" id="Jtv-KM-rwf"/>
-                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="top" secondItem="aL4-sR-0z8" secondAttribute="top" id="Kva-gO-SFq"/>
-                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="trailing" secondItem="aL4-sR-0z8" secondAttribute="trailing" id="Vrn-cP-xhE"/>
-                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="top" secondItem="egE-kq-HyJ" secondAttribute="top" id="dcw-38-0gg"/>
-                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="leading" secondItem="aL4-sR-0z8" secondAttribute="leading" id="jzk-RU-sN1"/>
+                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="centerX" secondItem="krV-bn-fIK" secondAttribute="centerX" id="IER-Jk-Eo9"/>
+                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="top" secondItem="egE-kq-HyJ" secondAttribute="top" id="Nrp-HF-aBb"/>
+                                    <constraint firstAttribute="trailing" secondItem="wqM-nr-Twn" secondAttribute="trailing" id="UB7-Jj-Thh"/>
+                                    <constraint firstAttribute="bottom" secondItem="wqM-nr-Twn" secondAttribute="bottom" constant="-324" id="mut-Zq-OCI"/>
+                                    <constraint firstItem="wqM-nr-Twn" firstAttribute="leading" secondItem="egE-kq-HyJ" secondAttribute="leading" id="nLq-tw-XvF"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="aL4-sR-0z8"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="egE-kq-HyJ"/>

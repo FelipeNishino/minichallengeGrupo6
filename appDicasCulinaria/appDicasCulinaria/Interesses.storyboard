@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Interesses-->
         <scene sceneID="Ahg-o9-7ab">
             <objects>
-                <viewController id="NuI-Se-Yqw" customClass="ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Interesses" id="NuI-Se-Yqw" customClass="ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xTK-sp-GS3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
-                                <rect key="frame" x="48.5" y="150" width="317.5" height="61"/>
+                                <rect key="frame" x="48.5" y="64" width="317.5" height="61"/>
                                 <string key="text">Selecione os topicos que voce possui 
 interesse para que eles possam aparecer 
 na sua tela inicial</string>
@@ -24,30 +24,8 @@ na sua tela inicial</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interesses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxJ-NT-I5k">
-                                <rect key="frame" x="20" y="94" width="160" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="UPg-Kr-e93"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rju-S2-jNk">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="qV3-yV-b6g"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem image="person.fill" catalog="system" id="QYh-kW-NeS"/>
-                                    <tabBarItem title="" image="house" catalog="system" id="ooZ-Vx-b2k"/>
-                                    <tabBarItem title="" image="magnifyingglass" catalog="system" id="IOz-gU-JyS"/>
-                                    <tabBarItem image="heart" catalog="system" id="BZC-8K-d88"/>
-                                </items>
-                            </tabBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-uR-IC8">
-                                <rect key="frame" x="35" y="266" width="344" height="482"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-uR-IC8">
+                                <rect key="frame" x="35" y="180" width="344" height="568"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-2W-dKx">
                                         <rect key="frame" x="42" y="10" width="120" height="50"/>
@@ -325,7 +303,30 @@ na sua tela inicial</string>
                                     <constraint firstItem="zfW-hG-KeZ" firstAttribute="leading" secondItem="pip-m7-vjC" secondAttribute="leading" id="sSC-oV-fKs"/>
                                 </constraints>
                             </view>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="05e-8o-Hjk">
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="top" secondItem="ziz-z4-M3A" secondAttribute="top" constant="20" id="IyQ-xX-DFf"/>
+                            <constraint firstItem="cjh-uR-IC8" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="JaQ-ej-jU2"/>
+                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="hcS-MK-peW"/>
+                            <constraint firstItem="cjh-uR-IC8" firstAttribute="top" secondItem="jAd-Ac-ngu" secondAttribute="bottom" constant="55" id="v0g-ye-MZU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ziz-z4-M3A"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSg-8T-QHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="12J-PZ-1qY">
+            <objects>
+                <viewController id="AQb-OL-0a3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sNg-fl-Rq1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05e-8o-Hjk">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
@@ -342,32 +343,16 @@ na sua tela inicial</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="cjh-uR-IC8" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="JaQ-ej-jU2"/>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="PsQ-Vq-pvo"/>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="top" secondItem="xTK-sp-GS3" secondAttribute="top" constant="40" id="SlZ-oj-a2b"/>
-                            <constraint firstItem="YxJ-NT-I5k" firstAttribute="top" secondItem="05e-8o-Hjk" secondAttribute="bottom" constant="10" id="TuK-Ze-fUc"/>
-                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="top" secondItem="YxJ-NT-I5k" secondAttribute="bottom" constant="20" id="YqR-Ow-0ge"/>
-                            <constraint firstItem="Rju-S2-jNk" firstAttribute="top" secondItem="cjh-uR-IC8" secondAttribute="bottom" constant="65" id="d7h-jy-W2b"/>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="leading" secondItem="xTK-sp-GS3" secondAttribute="leading" id="gyR-CZ-Ndd"/>
-                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="hcS-MK-peW"/>
-                            <constraint firstItem="YxJ-NT-I5k" firstAttribute="leading" secondItem="ziz-z4-M3A" secondAttribute="leading" constant="20" id="mEO-5c-utL"/>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="leading" secondItem="Rju-S2-jNk" secondAttribute="leading" id="r3t-OG-9Us"/>
-                            <constraint firstItem="Rju-S2-jNk" firstAttribute="bottom" secondItem="ziz-z4-M3A" secondAttribute="bottom" id="t0d-LA-Hsz"/>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="trailing" secondItem="Rju-S2-jNk" secondAttribute="trailing" id="tbO-QQ-8Wq"/>
-                            <constraint firstItem="cjh-uR-IC8" firstAttribute="top" secondItem="jAd-Ac-ngu" secondAttribute="bottom" constant="55" id="v0g-ye-MZU"/>
+                            <constraint firstItem="05e-8o-Hjk" firstAttribute="leading" secondItem="sNg-fl-Rq1" secondAttribute="leading" id="3ox-uN-FEY"/>
+                            <constraint firstItem="05e-8o-Hjk" firstAttribute="top" secondItem="sNg-fl-Rq1" secondAttribute="top" constant="44" id="7Rq-B4-BuZ"/>
+                            <constraint firstItem="05e-8o-Hjk" firstAttribute="centerX" secondItem="sNg-fl-Rq1" secondAttribute="centerX" id="J0n-9f-GW0"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ziz-z4-M3A"/>
+                        <viewLayoutGuide key="safeArea" id="M1x-65-ez8"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zSg-8T-QHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmt-wp-QvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="119"/>
+            <point key="canvasLocation" x="976" y="-47"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="house" catalog="system" width="128" height="110"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
-    </resources>
 </document>

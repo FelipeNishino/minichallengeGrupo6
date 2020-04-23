@@ -35,7 +35,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="PDS-Q0-5v1" kind="show" id="Fca-g1-2Z3"/>
+                                            <segue destination="MS8-8u-E7k" kind="show" id="FVF-hy-5HT"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="faq" textLabel="a0K-3K-1zY" style="IBUITableViewCellStyleDefault" id="Ynh-Rd-IPI">
@@ -55,7 +55,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="v92-A9-BzG" kind="show" id="3yT-p0-XF7"/>
+                                            <segue destination="KaL-PH-OKt" kind="show" id="P6H-Kk-rvv"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -144,6 +144,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndA-9P-wUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+        <!--Interesses-->
+        <scene sceneID="dfS-1t-w7y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Interesses" id="MS8-8u-E7k" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5Eh-nh-fdW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHl-oY-zY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2035" y="-92"/>
+        </scene>
+        <!--telaFAQ2-->
+        <scene sceneID="EfT-Tv-m86">
+            <objects>
+                <viewControllerPlaceholder storyboardName="telaFAQ2" id="KaL-PH-OKt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1SQ-U6-Z30"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Pl-GR-Haw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2041" y="-48"/>
         </scene>
     </scenes>
 </document>
