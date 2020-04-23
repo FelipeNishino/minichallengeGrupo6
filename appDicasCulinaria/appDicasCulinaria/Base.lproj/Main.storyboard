@@ -8,10 +8,10 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5AM-As-Qqn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="iBK-0d-gdc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07R-or-x3a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -27,16 +27,32 @@
                                 <state key="normal" title="Interesses"/>
                                 <connections>
                                     <segue destination="gYV-NK-odB" kind="show" id="U7z-9F-pTM"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hi2-jC-EsS">
+                                <rect key="frame" x="189" y="279" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Perfil"/>
+                                <connections>
+                                    <segue destination="CDk-Ql-JId" kind="show" id="Ewy-v4-Es9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="JKx-Pb-IQ7"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRk-co-VM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="-963" y="-356"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="ovT-uO-YIT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Perfil" id="CDk-Ql-JId" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vhC-KL-nbr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u62-cT-A5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="-510"/>
         </scene>
         <!--FAQVC-->
         <scene sceneID="Toy-ax-XPE">

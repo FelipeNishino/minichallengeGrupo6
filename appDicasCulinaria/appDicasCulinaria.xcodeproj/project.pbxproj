@@ -20,6 +20,9 @@
 		E25583D3243CFBF200507D29 /* appDicasCulinariaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */; };
 		E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278FF72245221AF001FAEE7 /* Interesses.storyboard */; };
 		E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278FF74245222D0001FAEE7 /* buttomn.swift */; };
+		E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B959F2448FE0700EFA536 /* customBtn.swift */; };
+		E28B95A22449015200EFA536 /* customBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28B95A12449015200EFA536 /* customBtn.xib */; };
+		E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B4433624520D3E0054A41A /* Perfil.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		E25583D4243CFBF200507D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E278FF72245221AF001FAEE7 /* Interesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interesses.storyboard; sourceTree = "<group>"; };
 		E278FF74245222D0001FAEE7 /* buttomn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttomn.swift; sourceTree = "<group>"; };
+		E28B959F2448FE0700EFA536 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
+		E28B95A12449015200EFA536 /* customBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customBtn.xib; sourceTree = "<group>"; };
+		E2B4433624520D3E0054A41A /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +129,10 @@
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
 				831DA56624491B5F00EA1F1E /* telaFAQ2 */,
+				E28B959F2448FE0700EFA536 /* customBtn.swift */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
+				E2B4433624520D3E0054A41A /* Perfil.storyboard */,
+				E28B95A12449015200EFA536 /* customBtn.xib */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
@@ -257,6 +266,8 @@
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
 				E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */,
+				E28B95A22449015200EFA536 /* customBtn.xib in Resources */,
+				E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
 				83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
@@ -286,6 +297,7 @@
 			files = (
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
 				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
+				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */,
 				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
