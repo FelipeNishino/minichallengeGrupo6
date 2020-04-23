@@ -21,6 +21,12 @@
                                 <state key="normal" title="FAQ2"/>
                                 <connections>
                                     <segue destination="z3A-YJ-IK7" kind="show" id="pWA-8S-zVo"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZV2-9q-IvE">
+                                <rect key="frame" x="172" y="433" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Interesses"/>
+                                <connections>
+                                    <segue destination="gYV-NK-odB" kind="show" id="U7z-9F-pTM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +47,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gi-QW-xf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="946" y="34"/>
+        <!--Interesses-->
+        <scene sceneID="mFz-Fj-V9o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Interesses" id="gYV-NK-odB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cFe-Tv-1RY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QI3-cd-Xvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781" y="115"/>
         </scene>
     </scenes>
 </document>
