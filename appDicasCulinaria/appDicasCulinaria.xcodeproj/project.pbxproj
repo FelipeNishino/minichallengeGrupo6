@@ -15,7 +15,8 @@
 		E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */; };
 		E25583C8243CFBF200507D29 /* appDicasCulinariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583C7243CFBF200507D29 /* appDicasCulinariaTests.swift */; };
 		E25583D3243CFBF200507D29 /* appDicasCulinariaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */; };
-		EC2C57DC244F752A00A0F779 /* buttomn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C57DB244F752A00A0F779 /* buttomn.swift */; };
+		E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278FF72245221AF001FAEE7 /* Interesses.storyboard */; };
+		E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278FF74245222D0001FAEE7 /* buttomn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,8 @@
 		E25583CE243CFBF200507D29 /* appDicasCulinariaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appDicasCulinariaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDicasCulinariaUITests.swift; sourceTree = "<group>"; };
 		E25583D4243CFBF200507D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC2C57DB244F752A00A0F779 /* buttomn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = buttomn.swift; path = ../../../../../Desktop/teste/teste/buttomn.swift; sourceTree = "<group>"; };
+		E278FF72245221AF001FAEE7 /* Interesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interesses.storyboard; sourceTree = "<group>"; };
+		E278FF74245222D0001FAEE7 /* buttomn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttomn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +106,12 @@
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
-				EC2C57DB244F752A00A0F779 /* buttomn.swift */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
+				E278FF72245221AF001FAEE7 /* Interesses.storyboard */,
+				E278FF74245222D0001FAEE7 /* buttomn.swift */,
 			);
 			path = appDicasCulinaria;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
+				E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
 			);
@@ -263,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
-				EC2C57DC244F752A00A0F779 /* buttomn.swift in Sources */,
+				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
 			);
