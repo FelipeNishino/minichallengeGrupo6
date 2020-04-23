@@ -22,7 +22,6 @@
                                 <state key="normal" title="DICA"/>
                                 <connections>
                                     <action selector="botao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OP2-3Q-ewG"/>
-                                    <action selector="botão:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wr1-rn-XU5"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bc8-dA-YQW">
