@@ -15,6 +15,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func recebe_numero(_ sender: Any) {
+    }
+    
+    
+    @IBAction func botao(_ sender: Any) {
+        
+    }
+    
+    
+    
 }
+
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */; };
+		2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */; };
 		E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B0243CFBEE00507D29 /* AppDelegate.swift */; };
 		E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B2243CFBEE00507D29 /* SceneDelegate.swift */; };
 		E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B4243CFBEE00507D29 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tela_dica_teste.storyboard; sourceTree = "<group>"; };
+		2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tela_dica_teste_ViewController.swift; sourceTree = "<group>"; };
 		E25583AD243CFBEE00507D29 /* appDicasCulinaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDicasCulinaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583B0243CFBEE00507D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25583B2243CFBEE00507D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EC368812450D34C009D7549 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E25583A4243CFBEE00507D29 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +117,9 @@
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
+				2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */,
+				2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */,
+				2EC368812450D34C009D7549 /* New Group */,
 			);
 			path = appDicasCulinaria;
 			sourceTree = "<group>";
@@ -235,6 +249,7 @@
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
+				2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +277,7 @@
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
+				2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
