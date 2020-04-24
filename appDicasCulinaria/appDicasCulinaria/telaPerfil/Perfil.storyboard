@@ -115,11 +115,13 @@
             </objects>
             <point key="canvasLocation" x="1096" y="842"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Perfil-->
         <scene sceneID="1fR-yq-14r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nCA-Uf-GOg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Perfil" image="person.fill" catalog="system" id="dgp-wt-2le"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ryc-Yl-OZ7">
                         <rect key="frame" x="0.0" y="44" width="414" height="105"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,4 +168,7 @@
             <point key="canvasLocation" x="2041" y="-48"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
 </document>
