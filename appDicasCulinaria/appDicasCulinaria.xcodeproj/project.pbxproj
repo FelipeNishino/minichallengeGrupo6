@@ -23,8 +23,6 @@
 		E25F7C9F2458C36D0001E2BB /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */; };
 		E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278FF72245221AF001FAEE7 /* Interesses.storyboard */; };
 		E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278FF74245222D0001FAEE7 /* buttomn.swift */; };
-		E28AA133245B55F600C60E93 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AA131245B55F600C60E93 /* UserDefaultsExtension.swift */; };
-		E28AA134245B55F600C60E93 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AA132245B55F600C60E93 /* Tip.swift */; };
 		E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AA135245B5AC900C60E93 /* HomeViewController.swift */; };
 		E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B959F2448FE0700EFA536 /* customBtn.swift */; };
 		E28B95A22449015200EFA536 /* customBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28B95A12449015200EFA536 /* customBtn.xib */; };
@@ -74,8 +72,6 @@
 		E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		E278FF72245221AF001FAEE7 /* Interesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interesses.storyboard; sourceTree = "<group>"; };
 		E278FF74245222D0001FAEE7 /* buttomn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttomn.swift; sourceTree = "<group>"; };
-		E28AA131245B55F600C60E93 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtension.swift; path = ../../../../../Desktop/UserDefaultsExtension.swift; sourceTree = "<group>"; };
-		E28AA132245B55F600C60E93 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tip.swift; path = ../../../../../Desktop/Tip.swift; sourceTree = "<group>"; };
 		E28AA135245B5AC900C60E93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E28B959F2448FE0700EFA536 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
 		E28B95A12449015200EFA536 /* customBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customBtn.xib; sourceTree = "<group>"; };
@@ -181,11 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
+				E28AA135245B5AC900C60E93 /* HomeViewController.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E2C8E0FB245A78A2007D4B54 /* Tip.swift */,
-				E28AA132245B55F600C60E93 /* Tip.swift */,
-				E28AA135245B5AC900C60E93 /* HomeViewController.swift */,
-				E28AA131245B55F600C60E93 /* UserDefaultsExtension.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
 				E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
@@ -375,8 +369,6 @@
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
 				E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */,
 				E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */,
-				E28AA134245B55F600C60E93 /* Tip.swift in Sources */,
-				E28AA133245B55F600C60E93 /* UserDefaultsExtension.swift in Sources */,
 				2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
