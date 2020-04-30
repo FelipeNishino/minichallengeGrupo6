@@ -7,52 +7,51 @@
 //
 
 import UIKit
+import Foundation
+
+enum Interests : Int {
+    case empty
+    case carnePerfeita
+    case soVeggies
+    case procedimentosBasicos
+    case metodosCoccao
+    case diaDia
+    case substituicoes
+    case comoCortar
+    case vistosRecentemente
+    case preAquecimento
+    case massas
+}
+
+//UserDefaults.standard.set(Interests.empty.rawValue, forKey: "tagsInterests")
+//
+//let rawValue = UserDefaults.standard.integer(forKey: "tagsInterests")
+//
+//let tagsInterests = Interests(rawValue: rawValue) ?? .empty
+
+
 
 class interestsViewController: UIViewController {
     
-    var tagSelected = tagsInterests.empty
+    var tagSelected = Interests.empty
     
     let saveButton  = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveInterest))
     let cancelButton  = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(saveInterest))
     
     // var buttonsInterests = [UIButton]()
-    
-    enum tagsInterests {
-        case empty
-        case carnePerfeita
-        case soVeggies
-        case procedimentosBasicos
-        case metodosCoccao
-        case diaDia
-        case substituicoes
-        case comoCortar
-        case vistosRecentemente
-        case preAquecimento
-        case massas
-    }
-    
-    
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
         checkClicked()
-       
-            
-        
-        
     }
     
     @objc func saveInterest() {
         print("salvando...")
-        checkClicked()
+        //checkClicked()
     }
     
     func checkClicked(){
-        if tagSelected != tagsInterests.empty{
+        if tagSelected != Interests.empty{
             
             self.navigationItem.rightBarButtonItem = saveButton
             self.navigationItem.leftBarButtonItem = cancelButton
@@ -162,7 +161,7 @@ class interestsViewController: UIViewController {
     
     @IBAction func btn_CarnePerfeita(_ sender: UIButton) {
         print("carne")
-        tagSelected = tagsInterests.carnePerfeita
+        tagSelected = Interests.carnePerfeita
         checkClicked()
         
         // buttonsInterests.append(btn_CarnePerfeita)
@@ -170,47 +169,47 @@ class interestsViewController: UIViewController {
     
     @IBAction func btn_SoVeggies(_ sender: UIButton) {
         print("veggie")
-        tagSelected = tagsInterests.soVeggies
+        tagSelected = Interests.soVeggies
         checkClicked()
     }
     
     @IBAction func btn_ProcedimentosBasicos(_ sender: UIButton) {
-        tagSelected = tagsInterests.procedimentosBasicos
+        tagSelected = Interests.procedimentosBasicos
         checkClicked()
     }
     
     @IBAction func btn_MetodosCoccao(_ sender: UIButton) {
-        tagSelected = tagsInterests.metodosCoccao
+        tagSelected = Interests.metodosCoccao
         checkClicked()
     }
     
     @IBAction func btn_DiaDia(_ sender: UIButton) {
-        tagSelected = tagsInterests.diaDia
+        tagSelected = Interests.diaDia
         checkClicked()
     }
     
     @IBAction func btn_Substituicoes(_ sender: UIButton) {
-        tagSelected = tagsInterests.substituicoes
+        tagSelected = Interests.substituicoes
         checkClicked()
     }
     
     @IBAction func btn_ComoCortar(_ sender: UIButton) {
-        tagSelected = tagsInterests.comoCortar
+        tagSelected = Interests.comoCortar
         checkClicked()
     }
     
     @IBAction func btn_VistosRecentemente(_ sender: UIButton) {
-        tagSelected = tagsInterests.vistosRecentemente
+        tagSelected = Interests.vistosRecentemente
         checkClicked()
     }
     
     @IBAction func btn_PreAquecimento(_ sender: UIButton) {
-        tagSelected = tagsInterests.preAquecimento
+        tagSelected = Interests.preAquecimento
         checkClicked()
     }
     
     @IBAction func btn_Massas(_ sender: UIButton) {
-        tagSelected = tagsInterests.massas
+        tagSelected = Interests.massas
         checkClicked()
     }
     
