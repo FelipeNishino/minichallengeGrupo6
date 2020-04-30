@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             UserDefaults.Tips = dict
 
+        
             print("setou userdefault")
         }
         
