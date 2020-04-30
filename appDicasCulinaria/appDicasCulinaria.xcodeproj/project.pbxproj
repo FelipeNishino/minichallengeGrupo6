@@ -20,11 +20,15 @@
 		E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */; };
 		E25583C8243CFBF200507D29 /* appDicasCulinariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583C7243CFBF200507D29 /* appDicasCulinariaTests.swift */; };
 		E25583D3243CFBF200507D29 /* appDicasCulinariaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */; };
+		E25F7C9F2458C36D0001E2BB /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */; };
 		E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278FF72245221AF001FAEE7 /* Interesses.storyboard */; };
 		E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278FF74245222D0001FAEE7 /* buttomn.swift */; };
 		E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B959F2448FE0700EFA536 /* customBtn.swift */; };
 		E28B95A22449015200EFA536 /* customBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28B95A12449015200EFA536 /* customBtn.xib */; };
 		E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B4433624520D3E0054A41A /* Perfil.storyboard */; };
+		E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C8E0FB245A78A2007D4B54 /* Tip.swift */; };
+		E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */; };
+		E2D52459245A11E10002A9B4 /* TestUserDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D52458245A11E10002A9B4 /* TestUserDef.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +68,15 @@
 		E25583CE243CFBF200507D29 /* appDicasCulinariaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appDicasCulinariaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDicasCulinariaUITests.swift; sourceTree = "<group>"; };
 		E25583D4243CFBF200507D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		E278FF72245221AF001FAEE7 /* Interesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interesses.storyboard; sourceTree = "<group>"; };
 		E278FF74245222D0001FAEE7 /* buttomn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttomn.swift; sourceTree = "<group>"; };
 		E28B959F2448FE0700EFA536 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
 		E28B95A12449015200EFA536 /* customBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customBtn.xib; sourceTree = "<group>"; };
 		E2B4433624520D3E0054A41A /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		E2C8E0FB245A78A2007D4B54 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		E2D52458245A11E10002A9B4 /* TestUserDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserDef.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,11 +176,14 @@
 			children = (
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
+				E2C8E0FB245A78A2007D4B54 /* Tip.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
+				E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
 				E22F97062453785600C4AB1E /* customControls */,
 				2EC368812450D34C009D7549 /* telaDica */,
+				E25F7C9D2458C2B80001E2BB /* telaFavoritos */,
 				E22F9704245377EC00C4AB1E /* telaPerfil */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
@@ -196,6 +207,15 @@
 				E25583D4243CFBF200507D29 /* Info.plist */,
 			);
 			path = appDicasCulinariaUITests;
+			sourceTree = "<group>";
+		};
+		E25F7C9D2458C2B80001E2BB /* telaFavoritos */ = {
+			isa = PBXGroup;
+			children = (
+				E2D52458245A11E10002A9B4 /* TestUserDef.swift */,
+				E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */,
+			);
+			path = telaFavoritos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +324,7 @@
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
 				E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */,
+				E25F7C9F2458C36D0001E2BB /* Favorites.storyboard in Resources */,
 				E28B95A22449015200EFA536 /* customBtn.xib in Resources */,
 				E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
@@ -335,12 +356,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
+				E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */,
 				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
 				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */,
 				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
+				E2D52459245A11E10002A9B4 /* TestUserDef.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
+				E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */,
 				2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

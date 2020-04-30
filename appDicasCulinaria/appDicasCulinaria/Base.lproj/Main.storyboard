@@ -28,10 +28,20 @@
             </objects>
             <point key="canvasLocation" x="1381.1594202898552" y="122.54464285714285"/>
         </scene>
+        <!--Favorites-->
+        <scene sceneID="u4h-PV-QCk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorites" id="cY0-qT-8bh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qdS-u1-LWw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khE-4d-1Qh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="214"/>
+        </scene>
         <!--Home-->
         <scene sceneID="6qm-gR-d73">
             <objects>
-                <viewController id="2gm-R3-sHd" sceneMemberID="viewController">
+                <viewController id="2gm-R3-sHd" customClass="ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CEg-bp-AjY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,6 +75,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8W-6t-OKl">
+                                <rect key="frame" x="184" y="657" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="cY0-qT-8bh" kind="show" id="ezq-RH-60x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="V22-dV-lYg"/>
@@ -75,32 +93,13 @@
             </objects>
             <point key="canvasLocation" x="734.78260869565224" y="71.651785714285708"/>
         </scene>
-        <!--FAQVC-->
-        <scene sceneID="Toy-ax-XPE">
-            <objects>
-                <viewControllerPlaceholder storyboardName="telaFAQ2" referencedIdentifier="FAQVC" id="z3A-YJ-IK7" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bsN-4c-Bqc"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9gi-QW-xf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1381.1594202898552" y="20.758928571428569"/>
-        </scene>
-        <!--Interesses-->
-        <scene sceneID="mFz-Fj-V9o">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Interesses" id="gYV-NK-odB" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="cFe-Tv-1RY"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QI3-cd-Xvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1392.753623188406" y="53.571428571428569"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Gc-El-6uO">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9eP-lN-GwH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ju1-GN-lKq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

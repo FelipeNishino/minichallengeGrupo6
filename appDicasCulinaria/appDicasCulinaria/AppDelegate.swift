@@ -11,10 +11,39 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let userDefaults = UserDefaults.standard
+        
+        
+        print("entrou didload")
+        
+        if userDefaults.object(forKey: "Tips") == nil {
+            var dict : [String : Tip]
+            dict = ["0" : Tip(title: "Teste", text: "Lorem ipsum sit dolor", tag: [0, 3, 5], fav: false, hasImg: false, imgURL: "")]
+
+            print("inicializa dict")
+            
+            UserDefaults.Tips = dict
+
+            print("setou userdefault")
+        }
+        
+        if userDefaults.object(forKey: "Favorites") == nil {
+            let fav : Set<Int> = [0, 3]
+            print("inicializa fav")
+
+            UserDefaults.Favorites = fav
+            print("setou userdefault")
+        }
+
+        if userDefaults.object(forKey: "Interests") == nil {
+            let interests : Set<Int> = [3, 6, 1]
+            print("inicializa interests")
+
+            UserDefaults.Interests = interests
+            print("setou userdefault")
+        }
         return true
     }
 
