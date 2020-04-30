@@ -31,7 +31,7 @@
         <!--Home-->
         <scene sceneID="6qm-gR-d73">
             <objects>
-                <viewController id="2gm-R3-sHd" sceneMemberID="viewController">
+                <viewController id="2gm-R3-sHd" customClass="HomeViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CEg-bp-AjY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,13 +65,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK5-kC-1Eg">
+                                <rect key="frame" x="172" y="487" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Apagar ud"/>
+                                <connections>
+                                    <action selector="ApagarUD:" destination="2gm-R3-sHd" eventType="touchUpInside" id="8re-Lm-C1T"/>
+                                    <action selector="ApagarUD:" destination="uRP-mp-pw2" eventType="touchUpInside" id="OcM-i4-V8y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-Zg-tgy">
+                                <rect key="frame" x="185" y="563" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ler ud"/>
+                                <connections>
+                                    <action selector="LerUD:" destination="2gm-R3-sHd" eventType="touchUpInside" id="85Z-G3-scH"/>
+                                    <action selector="LerUD:" destination="uRP-mp-pw2" eventType="touchUpInside" id="NF7-El-5tt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duP-Rb-Cwk">
+                                <rect key="frame" x="187" y="640" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="V22-dV-lYg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="oK1-4J-AZF"/>
+                    <connections>
+                        <outlet property="lbl" destination="duP-Rb-Cwk" id="Q64-Uc-Ugf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbP-ke-1Da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uRP-mp-pw2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="734.78260869565224" y="71.651785714285708"/>
         </scene>
@@ -101,6 +130,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9eP-lN-GwH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ju1-GN-lKq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
