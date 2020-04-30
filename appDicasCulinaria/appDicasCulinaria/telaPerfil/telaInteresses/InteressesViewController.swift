@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 
 enum Interests : Int {
     case empty
@@ -32,6 +31,17 @@ enum Interests : Int {
 
 
 class interestsViewController: UIViewController {
+    
+    @IBOutlet weak var btn_CarnePerfeita: UIButton!
+    @IBOutlet weak var btn_SoVeggies: UIButton!
+    @IBOutlet weak var btn_ProcedimentosBasicos: UIButton!
+    @IBOutlet weak var btn_MetodosCoccao: UIButton!
+    @IBOutlet weak var btn_DiaDia: UIButton!
+    @IBOutlet weak var btn_Substituicoes: UIButton!
+    @IBOutlet weak var btn_ComoCortar: UIButton!
+    @IBOutlet weak var btn_VistosRecentemente: UIButton!
+    @IBOutlet weak var btn_PreAquecimento: UIButton!
+    @IBOutlet weak var btn_Massas: UIButton!
     
     var tagSelected = Interests.empty
     
@@ -213,15 +223,6 @@ class interestsViewController: UIViewController {
         checkClicked()
     }
     
-    @IBOutlet weak var btn_CarnePerfeita: UIButton!
-    @IBOutlet weak var btn_SoVeggies: UIButton!
-    @IBOutlet weak var btn_ProcedimentosBasicos: UIButton!
-    @IBOutlet weak var btn_MetodosCoccao: UIButton!
-    @IBOutlet weak var btn_DiaDia: UIButton!
-    @IBOutlet weak var btn_Substituicoes: UIButton!
-    @IBOutlet weak var btn_ComoCortar: UIButton!
-    @IBOutlet weak var btn_VistosRecentemente: UIButton!
-    @IBOutlet weak var btn_PreAquecimento: UIButton!
-    @IBOutlet weak var btn_Massas: UIButton!
+    
 }
 
