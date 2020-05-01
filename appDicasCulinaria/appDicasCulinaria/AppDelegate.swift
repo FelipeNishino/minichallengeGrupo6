@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if userDefaults.object(forKey: "Tips") == nil {
             var dict : [String : Tip]
-            dict = ["0" : Tip(title: "Teste", text: "Lorem ipsum sit dolor", tag: [0, 3, 5], fav: false, hasImg: false, imgURL: "")]
+            dict = ["0" : Tip(title: "Teste", text: "Lorem ipsum sit dolor", tag: [0, 3, 5], fav: false, imgURL: "")]
 
             print("inicializa dict")
             
