@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NuI-Se-Yqw">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NuI-Se-Yqw">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,17 +11,17 @@
             <objects>
                 <viewController title="Interesses" id="NuI-Se-Yqw" customClass="interestsViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xTK-sp-GS3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMV-kB-W3L">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="904"/>
+                                <rect key="frame" x="0.0" y="-44" width="600" height="605.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-uR-IC8">
-                                        <rect key="frame" x="8" y="0.0" width="398" height="930"/>
+                                        <rect key="frame" x="8" y="0.0" width="577" height="930"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
-                                                <rect key="frame" x="40.5" y="99" width="317.5" height="61"/>
+                                                <rect key="frame" x="129.5" y="99" width="317.5" height="61"/>
                                                 <string key="text">Selecione os tópicos que você possui 
 interesse para que eles possam aparecer 
 na sua tela inicial</string>
@@ -55,10 +54,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_CarnePerfeita:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="ZWT-Dv-xva"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="ETU-On-cQ6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-92-SXH" userLabel="btn_SoVeggies">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-92-SXH" userLabel="btn_SoVeggies">
                                                 <rect key="frame" x="200" y="201" width="120" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -83,10 +82,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_SoVeggies:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="WFG-pZ-Djq"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="a80-sY-06a"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEc-NV-YMx" userLabel="btn_ProcedimentosBasicos">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEc-NV-YMx" userLabel="btn_ProcedimentosBasicos">
                                                 <rect key="frame" x="70" y="271" width="240" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -111,10 +110,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_ProcedimentosBasicos:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="aIE-a3-5KM"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="a4b-Fi-gSi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-zW-laB" userLabel="btn_MetodosCoccao">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-zW-laB" userLabel="btn_MetodosCoccao">
                                                 <rect key="frame" x="45" y="341" width="150" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -139,10 +138,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_MetodosCoccao:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="gjf-HT-05c"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="chu-TE-aif"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-hG-KeZ" userLabel="btn_DiaDia">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-hG-KeZ" userLabel="btn_DiaDia">
                                                 <rect key="frame" x="215" y="341" width="120" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -167,10 +166,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_DiaDia:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="Vud-Ul-Kkw"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="9uP-eU-vKl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-1y-Rwu" userLabel="btn_Substituicoes">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-1y-Rwu" userLabel="btn_Substituicoes">
                                                 <rect key="frame" x="59" y="411" width="120" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -195,10 +194,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_Substituicoes:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="e7J-qj-zQj"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="zUY-se-PL8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pip-m7-vjC" userLabel="btn_ComoCortar">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pip-m7-vjC" userLabel="btn_ComoCortar">
                                                 <rect key="frame" x="215" y="411" width="120" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -223,10 +222,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_ComoCortar:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="4Vc-T1-ubL"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="fhr-t5-k0q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-r1-K4M" userLabel="btn_VistosRecentemente">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-r1-K4M" userLabel="btn_VistosRecentemente">
                                                 <rect key="frame" x="80" y="481" width="220" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -251,10 +250,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_VistosRecentemente:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="hLA-Py-udA"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="dom-nU-OCs"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHI-J1-djh" userLabel="btn_PreAquecimento">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHI-J1-djh" userLabel="btn_PreAquecimento">
                                                 <rect key="frame" x="45" y="551" width="150" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -279,10 +278,10 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_PreAquecimento:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="3dW-GX-SRh"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="zz2-hT-MSD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-SG-mKb" userLabel="btn_Massas">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-SG-mKb" userLabel="btn_Massas">
                                                 <rect key="frame" x="215" y="551" width="140" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -307,7 +306,7 @@ na sua tela inicial</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="btn_Massas:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="ToK-X1-FC6"/>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="hH6-Fl-9XQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -382,11 +381,11 @@ na sua tela inicial</string>
             <objects>
                 <viewController id="AQb-OL-0a3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sNg-fl-Rq1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05e-8o-Hjk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
