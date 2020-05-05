@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tela dica teste View Controller-->
+        <!--tela_dica_teste-->
         <scene sceneID="iAo-gZ-pWi">
             <objects>
-                <viewController storyboardIdentifier="tela_dica_teste" id="P8H-hc-pYV" customClass="tela_dica_teste_ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tela_dica_teste" title="tela_dica_teste" id="P8H-hc-pYV" customClass="tela_dica_teste_ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mLu-Cg-Z9T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

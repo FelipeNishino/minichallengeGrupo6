@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -20,12 +21,14 @@ class HomeViewController: UIViewController {
     @IBAction func ApagarUD(_ sender: Any) {
         let userDef = UserDefaults.standard
         
+        print("clearing ud")
         userDef.removeObject(forKey: "Tips")
         userDef.removeObject(forKey: "Favorites")
         userDef.removeObject(forKey: "Interests")
+        print("ud cleared")
     }
     @IBAction func LerUD(_ sender: Any) {
-        print("entrou")
+        print("test read ud dict")
         
         let dict = UserDefaults.Tips
         

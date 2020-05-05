@@ -7,6 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Favorites-->
+        <scene sceneID="hGo-Tw-7oL">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Favorites" storyboardName="Favorites" id="uwt-r7-yi1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="38K-0I-ui3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oeh-EA-zua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="512"/>
+        </scene>
         <!--Perfil-->
         <scene sceneID="ovT-uO-YIT">
             <objects>
@@ -16,7 +26,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u62-cT-A5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43" y="512"/>
+            <point key="canvasLocation" x="-175" y="512"/>
         </scene>
         <!--tela_dica_teste-->
         <scene sceneID="fDT-YF-hMb">
@@ -28,21 +38,10 @@
             </objects>
             <point key="canvasLocation" x="1381.1594202898552" y="122.54464285714285"/>
         </scene>
-        <!--Favorites-->
-        <scene sceneID="u4h-PV-QCk">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Favorites" id="cY0-qT-8bh" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="qdS-u1-LWw"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="khE-4d-1Qh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1368" y="214"/>
-        </scene>
         <!--Home-->
         <scene sceneID="6qm-gR-d73">
             <objects>
-                <viewController id="2gm-R3-sHd" customClass="ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
-
+                <viewController id="2gm-R3-sHd" customClass="HomeViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CEg-bp-AjY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,14 +75,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8W-6t-OKl">
-                                <rect key="frame" x="184" y="657" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="cY0-qT-8bh" kind="show" id="ezq-RH-60x"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK5-kC-1Eg">
                                 <rect key="frame" x="172" y="487" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -136,6 +127,7 @@
                     <connections>
                         <segue destination="2gm-R3-sHd" kind="relationship" relationship="viewControllers" id="7jo-uq-QSr"/>
                         <segue destination="CDk-Ql-JId" kind="relationship" relationship="viewControllers" id="dmf-8I-bgh"/>
+                        <segue destination="uwt-r7-yi1" kind="relationship" relationship="viewControllers" id="CZY-g2-43G"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8V-gV-rQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,5 +138,6 @@
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
     </resources>
 </document>

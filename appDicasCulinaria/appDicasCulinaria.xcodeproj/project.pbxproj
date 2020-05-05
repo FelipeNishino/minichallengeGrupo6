@@ -29,7 +29,11 @@
 		E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B4433624520D3E0054A41A /* Perfil.storyboard */; };
 		E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C8E0FB245A78A2007D4B54 /* Tip.swift */; };
 		E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */; };
-		E2D52459245A11E10002A9B4 /* TestUserDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D52458245A11E10002A9B4 /* TestUserDef.swift */; };
+		E2F3992A2460B7EB00F19125 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F399282460B7EB00F19125 /* FavoriteCollectionViewCell.swift */; };
+		E2F3992D2460C2BB00F19125 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3992C2460C2BA00F19125 /* FavoritesViewController.swift */; };
+		E2F399312460FBFE00F19125 /* Tip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F399302460FBFE00F19125 /* Tip.storyboard */; };
+		E2F399332461001A00F19125 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F399322461001A00F19125 /* TipViewController.swift */; };
+		E2F3993524612C4000F19125 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3993424612C4000F19125 /* Tags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,15 +76,17 @@
 		E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		E278FF72245221AF001FAEE7 /* Interesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interesses.storyboard; sourceTree = "<group>"; };
 		E278FF74245222D0001FAEE7 /* buttomn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttomn.swift; sourceTree = "<group>"; };
-		E28AA131245B55F600C60E93 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
-		E28AA132245B55F600C60E93 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		E28AA135245B5AC900C60E93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E28B959F2448FE0700EFA536 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
 		E28B95A12449015200EFA536 /* customBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customBtn.xib; sourceTree = "<group>"; };
 		E2B4433624520D3E0054A41A /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 		E2C8E0FB245A78A2007D4B54 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
-		E2D52458245A11E10002A9B4 /* TestUserDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserDef.swift; sourceTree = "<group>"; };
+		E2F399282460B7EB00F19125 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2F3992C2460C2BA00F19125 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		E2F399302460FBFE00F19125 /* Tip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tip.storyboard; sourceTree = "<group>"; };
+		E2F399322461001A00F19125 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		E2F3993424612C4000F19125 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,7 @@
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
 				E28AA135245B5AC900C60E93 /* HomeViewController.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
+				E2F3993424612C4000F19125 /* Tags.swift */,
 				E2C8E0FB245A78A2007D4B54 /* Tip.swift */,
 				E25583B4243CFBEE00507D29 /* ViewController.swift */,
 				E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */,
@@ -217,8 +224,11 @@
 		E25F7C9D2458C2B80001E2BB /* telaFavoritos */ = {
 			isa = PBXGroup;
 			children = (
-				E2D52458245A11E10002A9B4 /* TestUserDef.swift */,
 				E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */,
+				E2F3992C2460C2BA00F19125 /* FavoritesViewController.swift */,
+				E2F399282460B7EB00F19125 /* FavoriteCollectionViewCell.swift */,
+				E2F399302460FBFE00F19125 /* Tip.storyboard */,
+				E2F399322461001A00F19125 /* TipViewController.swift */,
 			);
 			path = telaFavoritos;
 			sourceTree = "<group>";
@@ -329,6 +339,7 @@
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
 				E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */,
+				E2F399312460FBFE00F19125 /* Tip.storyboard in Resources */,
 				E25F7C9F2458C36D0001E2BB /* Favorites.storyboard in Resources */,
 				E28B95A22449015200EFA536 /* customBtn.xib in Resources */,
 				E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */,
@@ -360,15 +371,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F3992A2460B7EB00F19125 /* FavoriteCollectionViewCell.swift in Sources */,
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
+				E2F3992D2460C2BB00F19125 /* FavoritesViewController.swift in Sources */,
 				E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */,
 				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
 				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */,
+				E2F3993524612C4000F19125 /* Tags.swift in Sources */,
 				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
-				E2D52459245A11E10002A9B4 /* TestUserDef.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
+				E2F399332461001A00F19125 /* TipViewController.swift in Sources */,
 				E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */,
 				E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */,
 				2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */,
