@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E7E057A24607DFB00CE31D1 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E057924607DFB00CE31D1 /* Interest.swift */; };
+		2E7E057C246081B500CE31D1 /* carrossel_screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E057B246081B500CE31D1 /* carrossel_screen.storyboard */; };
+		2E7E057E246087E300CE31D1 /* carrossellcollectionviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E057D246087E300CE31D1 /* carrossellcollectionviewcell.swift */; };
+		2E7E05802460E96000CE31D1 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */; };
 		2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */; };
 		2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */; };
 		83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E7E057924607DFB00CE31D1 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		2E7E057B246081B500CE31D1 /* carrossel_screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = carrossel_screen.storyboard; sourceTree = "<group>"; };
+		2E7E057D246087E300CE31D1 /* carrossellcollectionviewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrossellcollectionviewcell.swift; sourceTree = "<group>"; };
+		2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tela_dica_teste.storyboard; sourceTree = "<group>"; };
 		2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tela_dica_teste_ViewController.swift; sourceTree = "<group>"; };
 		83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ2.storyboard; sourceTree = "<group>"; };
@@ -69,8 +77,8 @@
 		E25583D4243CFBF200507D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E278FF72245221AF001FAEE7 /* Interesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interesses.storyboard; sourceTree = "<group>"; };
 		E278FF74245222D0001FAEE7 /* buttomn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttomn.swift; sourceTree = "<group>"; };
-		E28AA131245B55F600C60E93 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtension.swift; path = ../../../../../Desktop/UserDefaultsExtension.swift; sourceTree = "<group>"; };
-		E28AA132245B55F600C60E93 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tip.swift; path = ../../../../../Desktop/Tip.swift; sourceTree = "<group>"; };
+		E28AA131245B55F600C60E93 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		E28AA132245B55F600C60E93 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		E28AA135245B5AC900C60E93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E28B959F2448FE0700EFA536 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
 		E28B95A12449015200EFA536 /* customBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customBtn.xib; sourceTree = "<group>"; };
@@ -185,6 +193,10 @@
 				E22F9704245377EC00C4AB1E /* telaPerfil */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
+				2E7E057924607DFB00CE31D1 /* Interest.swift */,
+				2E7E057B246081B500CE31D1 /* carrossel_screen.storyboard */,
+				2E7E057D246087E300CE31D1 /* carrossellcollectionviewcell.swift */,
+				2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */,
 			);
 			path = appDicasCulinaria;
 			sourceTree = "<group>";
@@ -319,6 +331,7 @@
 				83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
 				2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */,
+				2E7E057C246081B500CE31D1 /* carrossel_screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,10 +359,13 @@
 				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
 				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
 				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
+				2E7E057A24607DFB00CE31D1 /* Interest.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
 				83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */,
+				2E7E05802460E96000CE31D1 /* InterestsViewController.swift in Sources */,
 				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
+				2E7E057E246087E300CE31D1 /* carrossellcollectionviewcell.swift in Sources */,
 				E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */,
 				E28AA134245B55F600C60E93 /* Tip.swift in Sources */,
 				E28AA133245B55F600C60E93 /* UserDefaultsExtension.swift in Sources */,

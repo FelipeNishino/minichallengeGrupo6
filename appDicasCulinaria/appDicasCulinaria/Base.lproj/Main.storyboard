@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9eP-lN-GwH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,6 +27,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnS-8n-c2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1381.1594202898552" y="122.54464285714285"/>
+        </scene>
+        <!--carrossel_screen-->
+        <scene sceneID="ToH-JA-l7F">
+            <objects>
+                <viewControllerPlaceholder storyboardName="carrossel_screen" id="CBn-NW-V4e" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gn6-7g-2s3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285" y="264"/>
         </scene>
         <!--Home-->
         <scene sceneID="6qm-gR-d73">
@@ -83,15 +91,28 @@
                                     <action selector="LerUD:" destination="uRP-mp-pw2" eventType="touchUpInside" id="NF7-El-5tt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duP-Rb-Cwk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duP-Rb-Cwk">
                                 <rect key="frame" x="187" y="640" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCQ-Mo-DM6">
+                                <rect key="frame" x="165" y="716" width="87" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Carrossel"/>
+                                <connections>
+                                    <segue destination="CBn-NW-V4e" kind="showDetail" id="BgW-7r-Dj2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V22-dV-lYg" firstAttribute="bottom" secondItem="hCQ-Mo-DM6" secondAttribute="bottom" constant="59" id="0oC-Y4-Two"/>
+                            <constraint firstItem="hCQ-Mo-DM6" firstAttribute="centerX" secondItem="duP-Rb-Cwk" secondAttribute="centerX" id="UuA-Zd-E8z"/>
+                            <constraint firstItem="hCQ-Mo-DM6" firstAttribute="top" secondItem="duP-Rb-Cwk" secondAttribute="bottom" constant="55" id="cf3-Un-BTl"/>
+                            <constraint firstItem="hCQ-Mo-DM6" firstAttribute="leading" secondItem="V22-dV-lYg" secondAttribute="leading" constant="165" id="x4V-N0-nDx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="V22-dV-lYg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="oK1-4J-AZF"/>
