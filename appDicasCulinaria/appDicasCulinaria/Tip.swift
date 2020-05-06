@@ -14,5 +14,6 @@ struct Tip : Codable {
     var text : String
     var tag : Set<Int>
     var fav : Bool
+    var hasImg : Bool
     var imgURL : String
 }
