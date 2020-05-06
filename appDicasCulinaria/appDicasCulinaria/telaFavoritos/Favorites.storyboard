@@ -11,13 +11,16 @@
         <!--Favorites-->
         <scene sceneID="6UG-Y4-Btu">
             <objects>
-                <navigationController title="Favorites" automaticallyAdjustsScrollViewInsets="NO" id="hjH-tI-9Bx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hjH-tI-9Bx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="9dC-Rh-J8m"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pvy-XU-Y6o">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -28,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="-310.14492753623193" y="-183.48214285714286"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Favorites-->
         <scene sceneID="6P5-r0-s4S">
             <objects>
-                <viewController id="YgD-2J-fjw" customClass="FavoritesViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Favorites" id="YgD-2J-fjw" customClass="FavoritesViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Dk-UP-3XT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,11 +42,11 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QnP-mo-bhM">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="30" minimumInteritemSpacing="20" id="eeG-b0-3RH">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="20" sectionInsetReference="safeArea" id="eeG-b0-3RH">
                                     <size key="itemSize" width="343" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteCollectionViewCell" id="KAa-bj-bA3" customClass="FavoriteCollectionViewCell" customModule="appDicasCulinaria" customModuleProvider="target">
@@ -60,7 +63,7 @@
                                                     <rect key="frame" x="0.0" y="85" width="343" height="43"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNn-Dd-loX">
-                                                            <rect key="frame" x="8" y="8" width="53" height="27"/>
+                                                            <rect key="frame" x="8" y="8" width="52.5" height="27"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -70,7 +73,6 @@
                                                     <constraints>
                                                         <constraint firstItem="XNn-Dd-loX" firstAttribute="top" secondItem="SMz-lc-eTD" secondAttribute="top" constant="8" id="R6K-9K-j9h"/>
                                                         <constraint firstAttribute="bottom" secondItem="XNn-Dd-loX" secondAttribute="bottom" constant="8" id="YKS-ho-rh1"/>
-                                                        <constraint firstAttribute="trailing" secondItem="XNn-Dd-loX" secondAttribute="trailing" constant="282" id="nWz-XY-wxJ"/>
                                                         <constraint firstItem="XNn-Dd-loX" firstAttribute="leading" secondItem="SMz-lc-eTD" secondAttribute="leading" constant="8" id="tlS-Pq-GhE"/>
                                                     </constraints>
                                                 </view>
@@ -80,13 +82,13 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="SMz-lc-eTD" secondAttribute="trailing" id="5Ix-x6-DvY"/>
+                                                <constraint firstItem="SMz-lc-eTD" firstAttribute="top" secondItem="Q3r-Vr-58x" secondAttribute="top" constant="85" id="2I7-EH-QE5"/>
                                                 <constraint firstAttribute="trailing" secondItem="nFn-Gn-be6" secondAttribute="trailing" id="7ks-HG-NxF"/>
-                                                <constraint firstItem="SMz-lc-eTD" firstAttribute="top" secondItem="Q3r-Vr-58x" secondAttribute="top" constant="85" id="JR8-90-xXt"/>
+                                                <constraint firstItem="SMz-lc-eTD" firstAttribute="leading" secondItem="Q3r-Vr-58x" secondAttribute="leading" id="MHM-5H-Sh8"/>
                                                 <constraint firstItem="nFn-Gn-be6" firstAttribute="leading" secondItem="Q3r-Vr-58x" secondAttribute="leading" id="Nof-O8-Mwy"/>
-                                                <constraint firstAttribute="bottom" secondItem="SMz-lc-eTD" secondAttribute="bottom" id="SPy-6c-dNj"/>
+                                                <constraint firstAttribute="trailing" secondItem="SMz-lc-eTD" secondAttribute="trailing" id="ddy-bx-LAI"/>
+                                                <constraint firstAttribute="bottom" secondItem="SMz-lc-eTD" secondAttribute="bottom" id="h3H-hc-aFz"/>
                                                 <constraint firstItem="nFn-Gn-be6" firstAttribute="top" secondItem="Q3r-Vr-58x" secondAttribute="top" id="q33-qf-iUQ"/>
-                                                <constraint firstItem="SMz-lc-eTD" firstAttribute="leading" secondItem="Q3r-Vr-58x" secondAttribute="leading" id="y8G-8Q-V3c"/>
                                                 <constraint firstAttribute="bottom" secondItem="nFn-Gn-be6" secondAttribute="bottom" id="y9S-w3-RHZ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -103,14 +105,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="QnP-mo-bhM" firstAttribute="trailing" secondItem="LwR-yr-AS5" secondAttribute="trailing" id="LnZ-zR-qIN"/>
-                            <constraint firstItem="QnP-mo-bhM" firstAttribute="top" secondItem="LwR-yr-AS5" secondAttribute="top" id="M6q-ET-U4z"/>
-                            <constraint firstItem="QnP-mo-bhM" firstAttribute="bottom" secondItem="LwR-yr-AS5" secondAttribute="bottom" id="UOs-Ny-0s1"/>
-                            <constraint firstItem="QnP-mo-bhM" firstAttribute="leading" secondItem="LwR-yr-AS5" secondAttribute="leading" id="fCR-Q0-nlE"/>
+                            <constraint firstItem="QnP-mo-bhM" firstAttribute="top" secondItem="LwR-yr-AS5" secondAttribute="top" id="Q0T-GC-iCL"/>
+                            <constraint firstItem="QnP-mo-bhM" firstAttribute="leading" secondItem="LwR-yr-AS5" secondAttribute="leading" id="bPz-F6-uhX"/>
+                            <constraint firstItem="QnP-mo-bhM" firstAttribute="trailing" secondItem="LwR-yr-AS5" secondAttribute="trailing" id="fYr-ob-Fa1"/>
+                            <constraint firstItem="QnP-mo-bhM" firstAttribute="bottom" secondItem="LwR-yr-AS5" secondAttribute="bottom" id="mdW-Ck-nP9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LwR-yr-AS5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x0r-Uw-L0U"/>
+                    <navigationItem key="navigationItem" title="Favorites" largeTitleDisplayMode="always" id="x0r-Uw-L0U"/>
                     <connections>
                         <outlet property="collectionView" destination="QnP-mo-bhM" id="k4g-2p-dOO"/>
                     </connections>

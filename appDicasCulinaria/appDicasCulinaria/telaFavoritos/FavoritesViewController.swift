@@ -62,13 +62,12 @@ extension FavoritesViewController : UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCollectionViewCell", for: indexPath) as! FavoriteCollectionViewCell
-        let favIndex = String(favorites[favorites.index(favorites.startIndex, offsetBy: indexPath.row)])
-//        let favIndex = String(favArray[indexPath.row])
+
+        let favIndex = String(favArray[indexPath.row])
         
         print("setup cell \(indexPath.row), using tip \(favIndex)")
         
-        cell.title.text = tips[favIndex]?.text
-        cell.backgroundImage.image = UIImage(named: "placeholderImg")
+        cell.title.text = tips[favIndex]?.title
         cell.backgroundColorView.backgroundColor = .init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
         cell.button.addTarget(self, action: #selector(openTip), for: .touchUpInside)
         cell.button.tag = Int(favIndex)!
@@ -81,7 +80,9 @@ extension FavoritesViewController : UICollectionViewDataSource {
         
         let selectedFavTip = storyBoard.instantiateViewController(withIdentifier: "Tip") as! TipViewController
         //selectedFavTip.body.text = "abacaxi"
+        
         self.navigationController?.pushViewController(selectedFavTip, animated: true)
+        
         selectedFavTip.loadViewIfNeeded()
         
         var tips = UserDefaults.Tips
@@ -89,8 +90,18 @@ extension FavoritesViewController : UICollectionViewDataSource {
         let tag : Category = Tags.findTag(searchId: (tips[key]?.tag.removeFirst())!).rawValue
         
         selectedFavTip.title = tag.name
-        selectedFavTip.body.text = tips[key]?.text
-
+        
+        selectedFavTip.btnFav.topAnchor.constraint(equalTo: selectedFavTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        selectedFavTip.tipTitle.topAnchor.constraint(equalTo: selectedFavTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
+//        selectedFavTip.tipTitle.bottomAnchor.constraint(equalTo: selectedFavTip.btnFav.bottomAnchor).isActive = true
+        
+        selectedFavTip.tipTitle.text = tips[key]?.title
+        selectedFavTip.tipTitle.adjustsFontSizeToFitWidth = true
+        selectedFavTip.tipTitle.frame.size.height = selectedFavTip.tipTitle.intrinsicContentSize.height
+        selectedFavTip.tipTitle.sizeToFit()
+        
+        selectedFavTip.tipBody.text = tips[key]?.text
+        selectedFavTip.tipBody.frame.size.height = selectedFavTip.tipBody.intrinsicContentSize.height
     }
     // MARK: UICollectionViewDelegate
 
@@ -110,16 +121,16 @@ extension FavoritesViewController : UICollectionViewDataSource {
 
     
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-
-    func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return true
-    }
-
-    func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    }
+//    func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
+//        return true
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+//        return true
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+//    }
     
 
 }

@@ -22,13 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             var dict = [String : Tip]()
             
             dict.updateValue(Tip(title: "Dica 0", text: "dica 0 lorem ipsum", tag: [7], fav: true, imgURL: ""), forKey: "0")
-            dict.updateValue(Tip(title: "Dica 1", text: "dica 1 lorem ipsum", tag: [6], fav: true, imgURL: ""), forKey: "1")
-            dict.updateValue(Tip(title: "Dica 2", text: "dica 2 lorem ipsum", tag: [5], fav: true, imgURL: ""), forKey: "2")
-            dict.updateValue(Tip(title: "Dica 3", text: "dica 3 lorem ipsum", tag: [4], fav: true, imgURL: ""), forKey: "3")
-            dict.updateValue(Tip(title: "Dica 4", text: "dica 4 lorem ipsum", tag: [3], fav: true, imgURL: ""), forKey: "4")
-            dict.updateValue(Tip(title: "Dica 5", text: "dica 5 lorem ipsum", tag: [2], fav: true, imgURL: ""), forKey: "5")
-            dict.updateValue(Tip(title: "Dica 6", text: "dica 6 lorem ipsum", tag: [1], fav: true, imgURL: ""), forKey: "6")
-            dict.updateValue(Tip(title: "Dica 7", text: "dica 7 lorem ipsum", tag: [0], fav: true, imgURL: ""), forKey: "7")
+            
 
             print("dict init")
             

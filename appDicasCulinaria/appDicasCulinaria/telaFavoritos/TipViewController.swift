@@ -9,9 +9,9 @@
 import UIKit
 
 class TipViewController: UIViewController {
-    @IBOutlet weak var body : UILabel!
+    @IBOutlet weak var tipTitle : UILabel!
+    @IBOutlet weak var tipBody : UILabel!
     @IBOutlet weak var btnFav : UIButton!
-    @IBOutlet weak var favImg : UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

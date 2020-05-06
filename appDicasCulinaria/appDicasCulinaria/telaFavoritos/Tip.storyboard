@@ -19,29 +19,47 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NuG-Yk-aTt">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuG-Yk-aTt">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart" catalog="system" highlightedImage="heart.fill" translatesAutoresizingMaskIntoConstraints="NO" id="NvQ-ji-jjK">
-                                                <rect key="frame" x="336" y="9.5" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6i-L0-bdN">
-                                                <rect key="frame" x="336" y="10" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOF-sm-4wa">
-                                                <rect key="frame" x="37" y="68" width="351" height="28"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOF-sm-4wa">
+                                                <rect key="frame" x="32" y="99.5" width="350" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6i-L0-bdN">
+                                                <rect key="frame" x="330" y="8" width="52" height="52"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="52" id="dBJ-wL-jW3"/>
+                                                    <constraint firstAttribute="height" constant="52" id="ecm-Wo-5i1"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="heart" catalog="system"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIA-lF-QaR">
+                                                <rect key="frame" x="32" y="8" width="290" height="52"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="l6i-L0-bdN" secondAttribute="trailing" constant="32" id="6AV-Q6-HI0"/>
+                                            <constraint firstItem="SOF-sm-4wa" firstAttribute="top" secondItem="VIA-lF-QaR" secondAttribute="bottom" constant="40" id="E4D-TH-om0"/>
+                                            <constraint firstAttribute="trailing" secondItem="SOF-sm-4wa" secondAttribute="trailing" constant="32" id="Fr6-6i-rq8"/>
+                                            <constraint firstItem="SOF-sm-4wa" firstAttribute="leading" secondItem="NuG-Yk-aTt" secondAttribute="leading" constant="32" id="OBx-qM-TBh"/>
+                                            <constraint firstItem="l6i-L0-bdN" firstAttribute="leading" secondItem="VIA-lF-QaR" secondAttribute="trailing" constant="8" id="eKD-Yk-auf"/>
+                                            <constraint firstItem="VIA-lF-QaR" firstAttribute="leading" secondItem="NuG-Yk-aTt" secondAttribute="leading" constant="32" id="krS-eM-X1F"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="NuG-Yk-aTt" firstAttribute="bottom" secondItem="aJE-sA-KwE" secondAttribute="bottom" id="gM6-R6-XQX"/>
+                                    <constraint firstItem="NuG-Yk-aTt" firstAttribute="trailing" secondItem="aJE-sA-KwE" secondAttribute="trailing" id="m8O-d0-SaO"/>
+                                    <constraint firstItem="NuG-Yk-aTt" firstAttribute="leading" secondItem="aJE-sA-KwE" secondAttribute="leading" id="ovQ-dO-zJk"/>
+                                    <constraint firstItem="NuG-Yk-aTt" firstAttribute="top" secondItem="aJE-sA-KwE" secondAttribute="top" id="pyr-87-7n3"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="0UI-02-5Fw"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="aJE-sA-KwE"/>
                             </scrollView>
@@ -50,9 +68,9 @@
                         <viewLayoutGuide key="safeArea" id="HJa-yY-N1H"/>
                     </view>
                     <connections>
-                        <outlet property="body" destination="SOF-sm-4wa" id="P2f-fd-Vxb"/>
                         <outlet property="btnFav" destination="l6i-L0-bdN" id="Dh5-rg-bn5"/>
-                        <outlet property="favImg" destination="NvQ-ji-jjK" id="6BD-NG-MFt"/>
+                        <outlet property="tipBody" destination="SOF-sm-4wa" id="P2f-fd-Vxb"/>
+                        <outlet property="tipTitle" destination="VIA-lF-QaR" id="UfR-dJ-Qs5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOm-Yf-R23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -62,6 +80,5 @@
     </scenes>
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
     </resources>
 </document>

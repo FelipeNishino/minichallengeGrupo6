@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -71,49 +70,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wL-VL-ANa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1479.7101449275362" y="114.50892857142857"/>
-        </scene>
-        <!--F.A.Q.-->
-        <scene sceneID="bLj-kz-N8E">
-            <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="v92-A9-BzG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TQN-Y2-ZI9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="8Ck-Bb-wYU"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="F.A.Q." largeTitleDisplayMode="always" id="sfn-Jc-rYH">
-                        <barButtonItem key="backBarButtonItem" title="Perfil" id="YyN-gW-y57"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qxI-0e-nBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1886" y="842"/>
-        </scene>
-        <!--Editar Interesses-->
-        <scene sceneID="QwP-n3-mgL">
-            <objects>
-                <viewController id="PDS-Q0-5v1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="l3p-mP-4bk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szB-q8-No9" customClass="customBtn" customModule="appDicasCulinaria" customModuleProvider="target">
-                                <rect key="frame" x="169" y="296" width="54" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="qWl-pY-2Tk"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Editar Interesses" largeTitleDisplayMode="always" id="Y3V-We-NME">
-                        <barButtonItem key="backBarButtonItem" title="Perfil" id="fCT-eJ-XLE"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="97Z-bz-XoT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1096" y="842"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="1fR-yq-14r">
