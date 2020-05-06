@@ -28,7 +28,7 @@
 		E25F7C9F2458C36D0001E2BB /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */; };
 		E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278FF72245221AF001FAEE7 /* Interesses.storyboard */; };
 		E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278FF74245222D0001FAEE7 /* buttomn.swift */; };
-		E28AA133245B55F600C60E93 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AA131245B55F600C60E93 /* UserDefaultsExtension.swift */; };
+		E28AA133245B55F600C60E93 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AA135245B5AC900C60E93 /* HomeViewController.swift */; };
 		E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B959F2448FE0700EFA536 /* customBtn.swift */; };
 		E28B95A22449015200EFA536 /* customBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28B95A12449015200EFA536 /* customBtn.xib */; };
@@ -41,6 +41,10 @@
 		E2F399332461001A00F19125 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F399322461001A00F19125 /* TipViewController.swift */; };
 		E2F3993524612C4000F19125 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3993424612C4000F19125 /* Tags.swift */; };
 		EC20607C245B68350082D7EB /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20607B245B68350082D7EB /* Tip.swift */; };
+		EC44657F24628C84001FE25D /* TelaBusca.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44657E24628C84001FE25D /* TelaBusca.swift */; };
+		EC44658124628C94001FE25D /* TelaResultados.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44658024628C94001FE25D /* TelaResultados.swift */; };
+		EC44658324628CB9001FE25D /* CustomSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44658224628CB9001FE25D /* CustomSearchCell.swift */; };
+		EC44658524628CCA001FE25D /* TelaPesquisa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC44658424628CCA001FE25D /* TelaPesquisa.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +104,10 @@
 		E2F399322461001A00F19125 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		E2F3993424612C4000F19125 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 		EC20607B245B68350082D7EB /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		EC44657E24628C84001FE25D /* TelaBusca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaBusca.swift; sourceTree = "<group>"; };
+		EC44658024628C94001FE25D /* TelaResultados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultados.swift; sourceTree = "<group>"; };
+		EC44658224628CB9001FE25D /* CustomSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchCell.swift; sourceTree = "<group>"; };
+		EC44658424628CCA001FE25D /* TelaPesquisa.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TelaPesquisa.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +190,10 @@
 				E25583C6243CFBF200507D29 /* appDicasCulinariaTests */,
 				E25583D1243CFBF200507D29 /* appDicasCulinariaUITests */,
 				E25583AE243CFBEE00507D29 /* Products */,
+				EC44658424628CCA001FE25D /* TelaPesquisa.storyboard */,
+				EC44658024628C94001FE25D /* TelaResultados.swift */,
+				EC44657E24628C84001FE25D /* TelaBusca.swift */,
+				EC44658224628CB9001FE25D /* CustomSearchCell.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,7 +212,6 @@
 			children = (
 				EC20607B245B68350082D7EB /* Tip.swift */,
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
-				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E28AA135245B5AC900C60E93 /* HomeViewController.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
 				E2F3993424612C4000F19125 /* Tags.swift */,
@@ -368,6 +379,7 @@
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
 				2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */,
 				2E7E057C246081B500CE31D1 /* carrossel_screen.storyboard in Resources */,
+				EC44658524628CCA001FE25D /* TelaPesquisa.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +410,9 @@
 				E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */,
 				EC20607C245B68350082D7EB /* Tip.swift in Sources */,
 				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
+				EC44657F24628C84001FE25D /* TelaBusca.swift in Sources */,
 				839BAA1324578B9600D040E4 /* InteressesViewController.swift in Sources */,
+				EC44658124628C94001FE25D /* TelaResultados.swift in Sources */,
 				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
 				2E7E057A24607DFB00CE31D1 /* Interest.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
@@ -406,6 +420,7 @@
 				E2F3993524612C4000F19125 /* Tags.swift in Sources */,
 				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
+				EC44658324628CB9001FE25D /* CustomSearchCell.swift in Sources */,
 				E2F399332461001A00F19125 /* TipViewController.swift in Sources */,
 				E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */,
 				2E7E05802460E96000CE31D1 /* InterestsViewController.swift in Sources */,
@@ -413,7 +428,7 @@
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
 				2E7E057E246087E300CE31D1 /* carrossellcollectionviewcell.swift in Sources */,
 				E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */,
-				E28AA133245B55F600C60E93 /* UserDefaultsExtension.swift in Sources */,
+				E28AA133245B55F600C60E93 /* (null) in Sources */,
 				2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -66,7 +66,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.Interests = interests
             print("set ud interests")
         }
+        if userDefaults.object(forKey: "Search") == nil {
+            let Search : Set<String> = [""]
+            print("init Search set")
+            
+            UserDefaults.Search = Search
+            print("set Search interests")
+        }
+
         print("exit delegate ud init")
+        
         
         return true
     }
