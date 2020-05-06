@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NuI-Se-Yqw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NuI-Se-Yqw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,313 +10,372 @@
         <!--Interesses-->
         <scene sceneID="Ahg-o9-7ab">
             <objects>
-                <viewController title="Interesses" id="NuI-Se-Yqw" customClass="ViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Interesses" id="NuI-Se-Yqw" customClass="interestsViewController" customModule="appDicasCulinaria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xTK-sp-GS3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
-                                <rect key="frame" x="48.5" y="64" width="317.5" height="61"/>
-                                <string key="text">Selecione os topicos que voce possui 
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMV-kB-W3L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="904"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-uR-IC8">
+                                        <rect key="frame" x="8" y="0.0" width="398" height="930"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
+                                                <rect key="frame" x="40.5" y="99" width="317.5" height="61"/>
+                                                <string key="text">Selecione os tópicos que você possui 
 interesse para que eles possam aparecer 
 na sua tela inicial</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-uR-IC8">
-                                <rect key="frame" x="35" y="180" width="344" height="568"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-2W-dKx">
-                                        <rect key="frame" x="42" y="10" width="120" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-2W-dKx" userLabel="btn_carnePerfeita">
+                                                <rect key="frame" x="60" y="201" width="120" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="DZf-df-TjY"/>
+                                                    <constraint firstAttribute="height" constant="50" id="G2K-23-RYr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Carne perfeita">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="ETU-On-cQ6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-92-SXH" userLabel="btn_SoVeggies">
+                                                <rect key="frame" x="200" y="201" width="120" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="8L5-kJ-3h1"/>
+                                                    <constraint firstAttribute="height" constant="50" id="PxD-KB-BJO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Só veggies">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="a80-sY-06a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEc-NV-YMx" userLabel="btn_ProcedimentosBasicos">
+                                                <rect key="frame" x="70" y="271" width="240" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="0fB-EO-wXj"/>
+                                                    <constraint firstAttribute="height" constant="50" id="4Rg-dk-3PH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Procedimentos básicos">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="a4b-Fi-gSi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-zW-laB" userLabel="btn_MetodosCoccao">
+                                                <rect key="frame" x="45" y="341" width="150" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="WmX-x1-Gki"/>
+                                                    <constraint firstAttribute="height" constant="50" id="a2q-SG-uP7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Métodos de cocção">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="chu-TE-aif"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-hG-KeZ" userLabel="btn_DiaDia">
+                                                <rect key="frame" x="215" y="341" width="120" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="7Gt-Tc-jhV"/>
+                                                    <constraint firstAttribute="width" constant="120" id="DQa-EF-wmP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Dia a Dia">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="9uP-eU-vKl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-1y-Rwu" userLabel="btn_Substituicoes">
+                                                <rect key="frame" x="59" y="411" width="120" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="WIL-ca-ZUn"/>
+                                                    <constraint firstAttribute="width" constant="120" id="tWK-sJ-zoX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Substituições">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="zUY-se-PL8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pip-m7-vjC" userLabel="btn_ComoCortar">
+                                                <rect key="frame" x="215" y="411" width="120" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="aUv-iA-fQK"/>
+                                                    <constraint firstAttribute="height" constant="50" id="pB2-iO-A4V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Como cortar">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="fhr-t5-k0q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-r1-K4M" userLabel="btn_VistosRecentemente">
+                                                <rect key="frame" x="80" y="481" width="220" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="220" id="EZv-OO-8YX"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Wmr-tQ-3jn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Vistos recentemente">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="dom-nU-OCs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHI-J1-djh" userLabel="btn_PreAquecimento">
+                                                <rect key="frame" x="45" y="551" width="150" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6z7-kD-eUE"/>
+                                                    <constraint firstAttribute="width" constant="150" id="f6E-b6-EYr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Pré aquecimento">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="zz2-hT-MSD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-SG-mKb" userLabel="btn_Massas">
+                                                <rect key="frame" x="215" y="551" width="140" height="50"/>
+                                                <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Iva-qV-5kS"/>
+                                                    <constraint firstAttribute="width" constant="140" id="iPp-mR-RjY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
+                                                <state key="normal" title="Massas">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="11"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="hH6-Fl-9XQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="Fwm-IP-HUm"/>
-                                            <constraint firstAttribute="height" constant="50" id="gOW-el-vQC"/>
+                                            <constraint firstItem="NHI-J1-djh" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="45" id="0a7-2s-vDq"/>
+                                            <constraint firstItem="YEh-r1-K4M" firstAttribute="top" secondItem="WJT-1y-Rwu" secondAttribute="bottom" constant="20" id="5RE-1E-iNZ"/>
+                                            <constraint firstItem="zfW-hG-KeZ" firstAttribute="top" secondItem="mEc-NV-YMx" secondAttribute="bottom" constant="20" id="AbG-Kp-3VR"/>
+                                            <constraint firstItem="Tje-92-SXH" firstAttribute="leading" secondItem="Tue-2W-dKx" secondAttribute="trailing" constant="20" id="BdU-uZ-3lY"/>
+                                            <constraint firstItem="G9M-SG-mKb" firstAttribute="leading" secondItem="NHI-J1-djh" secondAttribute="trailing" constant="20" id="BmT-b3-7Xb"/>
+                                            <constraint firstItem="pip-m7-vjC" firstAttribute="top" secondItem="zfW-hG-KeZ" secondAttribute="bottom" constant="20" id="CkD-8Z-hqj"/>
+                                            <constraint firstItem="mEc-NV-YMx" firstAttribute="top" secondItem="Tue-2W-dKx" secondAttribute="bottom" constant="20" id="FgD-lS-Z90"/>
+                                            <constraint firstItem="G9M-SG-mKb" firstAttribute="top" secondItem="YEh-r1-K4M" secondAttribute="bottom" constant="20" id="LCi-cR-ctn"/>
+                                            <constraint firstAttribute="height" constant="930" id="ReP-TP-HVm"/>
+                                            <constraint firstItem="WJT-1y-Rwu" firstAttribute="top" secondItem="BPQ-zW-laB" secondAttribute="bottom" constant="20" id="TY9-gV-hjb"/>
+                                            <constraint firstItem="zfW-hG-KeZ" firstAttribute="leading" secondItem="BPQ-zW-laB" secondAttribute="trailing" constant="20" id="Up2-rS-ZK2"/>
+                                            <constraint firstItem="BPQ-zW-laB" firstAttribute="top" secondItem="mEc-NV-YMx" secondAttribute="bottom" constant="20" id="Yau-j7-rjU"/>
+                                            <constraint firstItem="Tue-2W-dKx" firstAttribute="top" secondItem="jAd-Ac-ngu" secondAttribute="bottom" constant="41" id="YjK-do-18O"/>
+                                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="centerX" secondItem="cjh-uR-IC8" secondAttribute="centerX" id="Z27-El-qlo"/>
+                                            <constraint firstItem="YEh-r1-K4M" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="80" id="aIM-HG-gXE"/>
+                                            <constraint firstItem="pip-m7-vjC" firstAttribute="leading" secondItem="WJT-1y-Rwu" secondAttribute="trailing" constant="36" id="bMs-RU-NxM"/>
+                                            <constraint firstItem="BPQ-zW-laB" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="45" id="eGS-iK-h5X"/>
+                                            <constraint firstItem="NHI-J1-djh" firstAttribute="top" secondItem="YEh-r1-K4M" secondAttribute="bottom" constant="20" id="iIU-ko-xwV"/>
+                                            <constraint firstItem="WJT-1y-Rwu" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="59" id="ipb-LG-TJV"/>
+                                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="top" secondItem="cjh-uR-IC8" secondAttribute="top" constant="99" id="kbj-cO-3dX"/>
+                                            <constraint firstItem="mEc-NV-YMx" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="70" id="xYx-kw-4sp"/>
+                                            <constraint firstItem="Tue-2W-dKx" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="60" id="yX0-Ca-1j7"/>
+                                            <constraint firstItem="Tje-92-SXH" firstAttribute="top" secondItem="jAd-Ac-ngu" secondAttribute="bottom" constant="41" id="yld-qW-5xd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Carne perfeita">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-92-SXH">
-                                        <rect key="frame" x="182" y="10" width="120" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="MRO-UJ-iun"/>
-                                            <constraint firstAttribute="width" constant="120" id="vCu-nE-vzd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="So veggies">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEc-NV-YMx">
-                                        <rect key="frame" x="52" y="80" width="240" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="807-Ko-M4g"/>
-                                            <constraint firstAttribute="height" constant="50" id="MaJ-cs-iKA"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Procedimentos basicos">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-zW-laB">
-                                        <rect key="frame" x="27" y="150" width="150" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="RSJ-LI-APc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="metodos de coccao">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-hG-KeZ">
-                                        <rect key="frame" x="197" y="150" width="120" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="x0I-Ge-Iqh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Dia a Dia">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-1y-Rwu">
-                                        <rect key="frame" x="41" y="220" width="120" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="BcP-ZD-ZnH"/>
-                                            <constraint firstAttribute="height" constant="50" id="oQI-7O-v1M"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Substituicoes">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pip-m7-vjC">
-                                        <rect key="frame" x="197" y="220" width="120" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="fVP-ZU-7OJ"/>
-                                            <constraint firstAttribute="width" constant="120" id="nMc-UW-wEb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Como cortar">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-r1-K4M">
-                                        <rect key="frame" x="62" y="290" width="220" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="220" id="9VS-vz-bcc"/>
-                                            <constraint firstAttribute="height" constant="50" id="z44-Gm-gli"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Vistos recentemente">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHI-J1-djh">
-                                        <rect key="frame" x="27" y="360" width="150" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="9Cq-tv-JBJ"/>
-                                            <constraint firstAttribute="width" constant="150" id="rUK-rG-uDG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Pre aquecimento">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-SG-mKb">
-                                        <rect key="frame" x="197" y="360" width="140" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="Q9d-is-HTF"/>
-                                            <constraint firstAttribute="height" constant="50" id="XeP-yV-rsW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="38"/>
-                                        <state key="normal" title="Massas">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="11"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="BPQ-zW-laB" firstAttribute="trailing" secondItem="NHI-J1-djh" secondAttribute="trailing" id="3Cj-kv-5oU"/>
-                                    <constraint firstItem="G9M-SG-mKb" firstAttribute="top" secondItem="YEh-r1-K4M" secondAttribute="bottom" constant="20" id="3ZL-Qs-XqH"/>
-                                    <constraint firstItem="mEc-NV-YMx" firstAttribute="centerX" secondItem="YEh-r1-K4M" secondAttribute="centerX" id="7cP-dM-bJF"/>
-                                    <constraint firstAttribute="trailing" secondItem="YEh-r1-K4M" secondAttribute="trailing" constant="62" id="ASf-4t-Y65"/>
-                                    <constraint firstItem="Tje-92-SXH" firstAttribute="leading" secondItem="Tue-2W-dKx" secondAttribute="trailing" constant="20" id="Aox-7h-Glk"/>
-                                    <constraint firstItem="Tje-92-SXH" firstAttribute="top" secondItem="cjh-uR-IC8" secondAttribute="top" constant="10" id="FqK-Xg-0Jf"/>
-                                    <constraint firstItem="mEc-NV-YMx" firstAttribute="top" secondItem="Tje-92-SXH" secondAttribute="bottom" constant="20" id="G6o-d9-yHo"/>
-                                    <constraint firstItem="zfW-hG-KeZ" firstAttribute="trailing" secondItem="pip-m7-vjC" secondAttribute="trailing" id="NRK-Ig-pwq"/>
-                                    <constraint firstItem="Tue-2W-dKx" firstAttribute="top" secondItem="cjh-uR-IC8" secondAttribute="top" constant="10" id="PK4-Rf-2mb"/>
-                                    <constraint firstItem="pip-m7-vjC" firstAttribute="leading" secondItem="WJT-1y-Rwu" secondAttribute="trailing" constant="36" id="TAk-Qq-mZS"/>
-                                    <constraint firstItem="G9M-SG-mKb" firstAttribute="leading" secondItem="NHI-J1-djh" secondAttribute="trailing" constant="20" id="TfB-vW-N4v"/>
-                                    <constraint firstItem="WJT-1y-Rwu" firstAttribute="top" secondItem="BPQ-zW-laB" secondAttribute="bottom" constant="20" id="U9S-pK-d1Z"/>
-                                    <constraint firstItem="NHI-J1-djh" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="27" id="XX6-m4-XL5"/>
-                                    <constraint firstItem="NHI-J1-djh" firstAttribute="top" secondItem="YEh-r1-K4M" secondAttribute="bottom" constant="20" id="Ylj-W9-fLz"/>
-                                    <constraint firstItem="Tue-2W-dKx" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="42" id="Zb2-KE-9L1"/>
-                                    <constraint firstItem="zfW-hG-KeZ" firstAttribute="leading" secondItem="BPQ-zW-laB" secondAttribute="trailing" constant="20" id="a3E-Rq-F8x"/>
-                                    <constraint firstItem="pip-m7-vjC" firstAttribute="top" secondItem="zfW-hG-KeZ" secondAttribute="bottom" constant="20" id="a3m-sx-YXe"/>
-                                    <constraint firstItem="zfW-hG-KeZ" firstAttribute="top" secondItem="mEc-NV-YMx" secondAttribute="bottom" constant="20" id="ibT-8x-fvf"/>
-                                    <constraint firstItem="YEh-r1-K4M" firstAttribute="top" secondItem="WJT-1y-Rwu" secondAttribute="bottom" constant="20" id="jJE-O4-Gtx"/>
-                                    <constraint firstItem="YEh-r1-K4M" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="62" id="kel-HX-as6"/>
-                                    <constraint firstItem="BPQ-zW-laB" firstAttribute="top" secondItem="mEc-NV-YMx" secondAttribute="bottom" constant="20" id="omJ-lH-enx"/>
-                                    <constraint firstItem="BPQ-zW-laB" firstAttribute="leading" secondItem="NHI-J1-djh" secondAttribute="leading" id="s7c-8F-EJT"/>
-                                    <constraint firstItem="zfW-hG-KeZ" firstAttribute="leading" secondItem="pip-m7-vjC" secondAttribute="leading" id="sSC-oV-fKs"/>
+                                    <constraint firstAttribute="trailing" secondItem="cjh-uR-IC8" secondAttribute="trailing" constant="8" id="5Qf-VX-fed"/>
+                                    <constraint firstItem="cjh-uR-IC8" firstAttribute="leading" secondItem="UMV-kB-W3L" secondAttribute="leading" constant="8" id="C9s-4S-OI7"/>
+                                    <constraint firstItem="cjh-uR-IC8" firstAttribute="bottom" secondItem="UMV-kB-W3L" secondAttribute="bottomMargin" constant="68" id="f3U-Nz-aF0"/>
+                                    <constraint firstItem="cjh-uR-IC8" firstAttribute="width" secondItem="UMV-kB-W3L" secondAttribute="width" multiplier="0.961353" id="mwX-BD-Gjc"/>
+                                    <constraint firstItem="cjh-uR-IC8" firstAttribute="top" secondItem="hCm-xZ-f91" secondAttribute="top" id="qkj-bH-ktn"/>
                                 </constraints>
-                            </view>
+                                <viewLayoutGuide key="contentLayoutGuide" id="hCm-xZ-f91"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ncB-iw-KAq"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="top" secondItem="ziz-z4-M3A" secondAttribute="top" constant="20" id="IyQ-xX-DFf"/>
-                            <constraint firstItem="cjh-uR-IC8" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="JaQ-ej-jU2"/>
-                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="hcS-MK-peW"/>
-                            <constraint firstItem="cjh-uR-IC8" firstAttribute="top" secondItem="jAd-Ac-ngu" secondAttribute="bottom" constant="55" id="v0g-ye-MZU"/>
+                            <constraint firstItem="UMV-kB-W3L" firstAttribute="width" secondItem="xTK-sp-GS3" secondAttribute="width" id="DDZ-nJ-8qB"/>
+                            <constraint firstItem="UMV-kB-W3L" firstAttribute="height" secondItem="xTK-sp-GS3" secondAttribute="height" multiplier="1.00893" id="JG2-Fe-SSd"/>
+                            <constraint firstItem="UMV-kB-W3L" firstAttribute="top" secondItem="xTK-sp-GS3" secondAttribute="topMargin" constant="-44" id="aBv-ha-WMY"/>
+                            <constraint firstItem="UMV-kB-W3L" firstAttribute="leading" secondItem="ziz-z4-M3A" secondAttribute="leading" id="cuW-dL-SRt"/>
+                            <constraint firstItem="UMV-kB-W3L" firstAttribute="centerX" secondItem="xTK-sp-GS3" secondAttribute="centerX" id="uBX-jK-zI4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ziz-z4-M3A"/>
                     </view>
+                    <connections>
+                        <outlet property="btn_CarnePerfeita" destination="Tue-2W-dKx" id="wAq-jS-Y6D"/>
+                        <outlet property="btn_ComoCortar" destination="pip-m7-vjC" id="UbI-y3-bDG"/>
+                        <outlet property="btn_DiaDia" destination="zfW-hG-KeZ" id="HAs-8s-8up"/>
+                        <outlet property="btn_Massas" destination="G9M-SG-mKb" id="OcT-dt-Ej3"/>
+                        <outlet property="btn_MetodosCoccao" destination="BPQ-zW-laB" id="z7Y-5g-ssL"/>
+                        <outlet property="btn_PreAquecimento" destination="NHI-J1-djh" id="WZe-g2-mfr"/>
+                        <outlet property="btn_ProcedimentosBasicos" destination="mEc-NV-YMx" id="yBG-zt-IZ2"/>
+                        <outlet property="btn_SoVeggies" destination="Tje-92-SXH" id="4f0-bs-FOK"/>
+                        <outlet property="btn_Substituicoes" destination="WJT-1y-Rwu" id="Ieq-mt-LIA"/>
+                        <outlet property="btn_VistosRecentemente" destination="YEh-r1-K4M" id="MEW-nd-Wmq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSg-8T-QHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="119"/>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="12J-PZ-1qY">

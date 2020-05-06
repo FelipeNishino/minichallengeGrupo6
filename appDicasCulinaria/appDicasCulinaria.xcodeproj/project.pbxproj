@@ -13,6 +13,7 @@
 		2E7E05802460E96000CE31D1 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */; };
 		2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */; };
 		2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */; };
+		839BAA1324578B9600D040E4 /* InteressesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BAA1224578B9600D040E4 /* InteressesViewController.swift */; };
 		83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */; };
 		83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */; };
 		83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */; };
@@ -64,6 +65,7 @@
 		2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tela_dica_teste.storyboard; sourceTree = "<group>"; };
 		2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tela_dica_teste_ViewController.swift; sourceTree = "<group>"; };
+		839BAA1224578B9600D040E4 /* InteressesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteressesViewController.swift; sourceTree = "<group>"; };
 		83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ2.storyboard; sourceTree = "<group>"; };
 		83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableController.swift; sourceTree = "<group>"; };
 		83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableViewCell.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				E278FF72245221AF001FAEE7 /* Interesses.storyboard */,
+				839BAA1224578B9600D040E4 /* InteressesViewController.swift */,
 			);
 			path = telaInteresses;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				E2F3992D2460C2BB00F19125 /* FavoritesViewController.swift in Sources */,
 				E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */,
 				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
+				839BAA1324578B9600D040E4 /* InteressesViewController.swift in Sources */,
 				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
 				2E7E057A24607DFB00CE31D1 /* Interest.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
