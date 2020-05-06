@@ -23,12 +23,12 @@ extension UserDefaults {
             tipData?.forEach({ (key: String, value: Data) in
                 dict.updateValue(try! PropertyListDecoder().decode(Tip.self, from: value), forKey: key)
             })
-                        
+            
             return dict
         }
         set {
             var tipData = [String : Data]()
-
+            
             print(newValue.debugDescription)
             
             newValue.forEach { (key: String, value: Tip) in

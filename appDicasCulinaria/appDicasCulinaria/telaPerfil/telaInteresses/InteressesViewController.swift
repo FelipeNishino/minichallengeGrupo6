@@ -38,7 +38,7 @@ class interestsViewController: UIViewController {
     var setInterests = UserDefaults.Interests
     
     //variável que recebe o set com os valores que o usuário salvou na última sessão - "seta" a partir do computador e usa as escolhas do usuário da última sessão
-    let tempSet = UserDefaults.Interests
+    var tempSet = UserDefaults.Interests
 
     let saveButton  = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveInterest))
     
@@ -75,11 +75,25 @@ class interestsViewController: UIViewController {
         }
     }
     
-    //chama o set de interests dentro do user defaults e seta os valores selecionados pelo usuário
+    //chama o set de interests dentro do user defaults e seta os valores selecionados pelo usuário; Atribui os valores de setInterests para tempSet e atualiza o estado do botão "Save"
     @objc func saveInterest() {
         UserDefaults.Interests = setInterests
+        tempSet = setInterests
+        refreshSaveBtn()
     }
-        
+    
+    @objc func refreshSaveBtn() {
+        //se lado A e B (adicionar e remover) não estiverem igualmente vazios (diagrama de Venn), então o usuário selecionou algo para acrescentar -> habilite o botão
+        if !setInterests.symmetricDifference(tempSet).isEmpty {
+            self.navigationItem.rightBarButtonItem!.isEnabled = true
+        }
+            
+        //lado A e B estão iguais, nada foi adicionado ou removido -> mantenha o botão de save desabilitado
+        else {
+            self.navigationItem.rightBarButtonItem!.isEnabled = false
+        }
+    }
+    
     @IBAction func selectInterest(_ sender: UIButton) {
         
         //se o background do botão não for verde, ele troca a cor e insere a tag (interesse) no setInterests
@@ -93,16 +107,7 @@ class interestsViewController: UIViewController {
             sender.backgroundColor = .systemGray3
             setInterests.remove(sender.tag)
         }
-        
-        //se lado A e B (adicionar e remover) não estiverem igualmente vazios (diagrama de Venn), então o usuário selecionou algo para acrescentar -> habilite o botão
-        if !setInterests.symmetricDifference(tempSet).isEmpty {
-            self.navigationItem.rightBarButtonItem!.isEnabled = true
-        }
-            
-        //lado A e B estão iguais, nada foi adicionado ou removido -> mantenha o botão de save desabilitado
-        else {
-            self.navigationItem.rightBarButtonItem!.isEnabled = false
-        }
+        refreshSaveBtn()
     }
 }
 

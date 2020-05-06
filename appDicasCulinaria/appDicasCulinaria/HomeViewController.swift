@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var lbl: UILabel!
     
     @IBAction func ApagarUD(_ sender: Any) {
         let userDef = UserDefaults.standard
@@ -27,14 +26,6 @@ class HomeViewController: UIViewController {
         userDef.removeObject(forKey: "Interests")
         print("ud cleared")
     }
-    @IBAction func LerUD(_ sender: Any) {
-        print("test read ud dict")
-        
-        let dict = UserDefaults.Tips
-        
-        lbl.text = dict["0"]?.text
-    }
-    
    
     /*
     // MARK: - Navigation

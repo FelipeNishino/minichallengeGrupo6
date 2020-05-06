@@ -10,21 +10,20 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let userDefaults = UserDefaults.standard
-        
         
         print("enter delegate ud init")
         
         if userDefaults.object(forKey: "Tips") == nil {
             var dict = [String : Tip]()
             
-            dict.updateValue(Tip(title: "Dica 0", text: "dica 0 lorem ipsum", tag: [7], fav: true, imgURL: ""), forKey: "0")
+            print("tips dict init")
             
-            var dict : [String : Tip]
-            dict = ["0" : Tip(title: "Evitando restos de farinha", text: "Quando for abrir uma massa e for necessitar de farinha para abrir a massa, coloque uma lâmina de filme plástico ou de celofane para churrasco sobre a superfície e coloque a farinha sobre o filme ou o celofane. Na hora de limpar, basta recolher o filme ou o celofane, evitando que a farinha fique depositada na pedra ou mesa. Dica da dica - se for utilizar o celofane, para evitar que ele escorregue sobre a superfície da pedra ou da mesa, adicione algumas gotas de água na superfície antes de colocar o celofane. Isto fará com que o celofane não escorregue.", tag: [2, 4, 9], fav: false, hasImg: false, imgURL: ""),
+            dict = [
+                "0" : Tip(title: "Evitando restos de farinha", text: "Quando for abrir uma massa e for necessitar de farinha para abrir a massa, coloque uma lâmina de filme plástico ou de celofane para churrasco sobre a superfície e coloque a farinha sobre o filme ou o celofane. Na hora de limpar, basta recolher o filme ou o celofane, evitando que a farinha fique depositada na pedra ou mesa. Dica da dica - se for utilizar o celofane, para evitar que ele escorregue sobre a superfície da pedra ou da mesa, adicione algumas gotas de água na superfície antes de colocar o celofane. Isto fará com que o celofane não escorregue.", tag: [2, 4, 9], fav: false, hasImg: false, imgURL: ""),
                 "1" : Tip(title: "Guardando facas e objetos cortantes", text: "Guarde as facas e objetos cortantes com a lâmina virada para baixo em gavetas, e tente colocar uma faca ao lado da outra, de forma a facilitar o acesso ao cabo, evitando cortes. Dica da dica - facas e objetos pontiagudos podem ser colocados com as pontas e lâminas para baixo nos escorredores de talheres após a lavagem, evitando machucados.", tag: [2, 4], fav: false, hasImg: false, imgURL: ""),
                 "2" : Tip(title: "Posição das panelas no fogão", text: "Ao utilizar panelas no fogão, procure deixar os cabos apontados para fora, evitando que aqueçam muito, enquanto as panelas estão no fogo.", tag: [2, 3, 4], fav: false, hasImg: false, imgURL: ""),
                 "3" : Tip(title: "Ponto do cozimento de bolos", text: "Para saber se uma massa de bolo está devidamente assada, abra o forno com cuidado, com o uso de luva térmica protetora, espete e retire um palito no meio do bolo. Se o palito sair seco, a massa está cozida. Se a massa ficar grudada no palito, a massa ainda deve cozinhar por mais tempo. Dica da dica - evite abrir o forno muitas vezes durante o cozimento de alimentos, em especial de bolos e doces. A abertura do forno leva a perda momentânea de calor, que faz com que a massa murche e não fique tão alta.", tag: [2, 4], fav: false, hasImg: false, imgURL: ""),
@@ -46,27 +45,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 "19" : Tip(title: "Pré-aquecimento de forno", text: "Algumas receitas indicam o preparo de alimentos em forno pré-aquecido a determinada temperatura. O pré-aquecimento consiste em ligar o forno ainda vazio, de cinco a quinze minutos (o tempo varia conforme a capacidade de cada forno de reter e manter o calor gerado), na mesma temperatura recomendada para o preparo da receita. Após este tempo, o alimento poderá ser colocado no forno já aquecido.", tag: [2, 3, 4, 8], fav: false, hasImg: false, imgURL: ""),
                 "20" : Tip(title: "Uso de equipamentos de madeira", text: "O uso de equipamentos de madeira na cozinha deve ser evitado. Isto porque a madeira passa a apresentar fissuras e cortes, seja em tábuas, colheres ou outros equipamentos, decorrentes da interação com objetos cortantes, pelo ressecamento natural da madeira, ou a exposição a altas temperaturas. As fissúras sáo de difícil limpeza e exterilização, permitindo o crescimento de culturas contaminantes aos alimentos.", tag: [2, 4], fav: false, hasImg: false, imgURL: "")
             ]
-            dict = ["0" : Tip(title: "Teste", text: "Lorem ipsum sit dolor", tag: [0, 3, 5], fav: false, imgURL: "")]
-
-            print("dict init")
             
             UserDefaults.Tips = dict
-        
+            
             print("set ud dict")
         }
         
         if userDefaults.object(forKey: "Favorites") == nil {
-            let fav : Set<Int> = [0, 1, 2, 3, 4, 5, 6, 7]
-            print("init fav")
-
+            let fav : Set<Int> = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            print("init fav set")
+            
             UserDefaults.Favorites = fav
             print("set ud fav")
         }
-
+        
         if userDefaults.object(forKey: "Interests") == nil {
             let interests : Set<Int> = [3, 6, 1]
-            print("init interests")
-
+            print("init interests set")
+            
             UserDefaults.Interests = interests
             print("set ud interests")
         }
@@ -74,21 +70,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    
 }
 
