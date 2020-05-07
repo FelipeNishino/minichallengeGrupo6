@@ -23,13 +23,28 @@ class FavoritesViewController: UIViewController {
         tips = UserDefaults.Tips
         favorites = UserDefaults.Favorites
         favArray = favorites.sorted()
-        
-        print(favorites.debugDescription)
-        
+                
         favoriteTips = tips.filter { key, value in
             favorites.contains(Int(key)!)
         }
         collectionView.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        print("viewwillappear")
+        
+        favorites = UserDefaults.Favorites
+        favArray = favorites.sorted()
+        print(favArray.debugDescription, favArray.count, favorites.count)
+        
+        print("viewappeared")
+    }
+ 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        print("view didappear")
+        collectionView.reloadData()
     }
 }
 
@@ -47,7 +62,7 @@ extension FavoritesViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCollectionViewCell", for: indexPath) as! FavoriteCollectionViewCell
-        
+        print(favArray.count, indexPath)
         let favIndex = String(favArray[indexPath.row])
         
         print("setup cell \(indexPath.row), using tip \(favIndex)")
@@ -68,16 +83,16 @@ extension FavoritesViewController : UICollectionViewDataSource {
         
         self.navigationController?.pushViewController(selectedFavTip, animated: true)
         
-        selectedFavTip.loadViewIfNeeded()
-        
         var tips = UserDefaults.Tips
         let key = String(sender.tag)
         let tag : Category = Tags.findTag(searchId: (tips[key]?.tag.removeFirst())!).rawValue
         
+        selectedFavTip.tipId = Int(key)!
+        
+        selectedFavTip.loadViewIfNeeded()
+        
         selectedFavTip.title = tag.name
         
-        selectedFavTip.btnFav.topAnchor.constraint(equalTo: selectedFavTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        selectedFavTip.tipTitle.topAnchor.constraint(equalTo: selectedFavTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
         //        selectedFavTip.tipTitle.bottomAnchor.constraint(equalTo: selectedFavTip.btnFav.bottomAnchor).isActive = true
         
         selectedFavTip.tipTitle.text = tips[key]?.title

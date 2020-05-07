@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 "19" : Tip(title: "Pré-aquecimento de forno", text: "Algumas receitas indicam o preparo de alimentos em forno pré-aquecido a determinada temperatura. O pré-aquecimento consiste em ligar o forno ainda vazio, de cinco a quinze minutos (o tempo varia conforme a capacidade de cada forno de reter e manter o calor gerado), na mesma temperatura recomendada para o preparo da receita. Após este tempo, o alimento poderá ser colocado no forno já aquecido.", tag: [2, 3, 4, 8], fav: false, hasImg: false, imgURL: ""),
                 "20" : Tip(title: "Uso de equipamentos de madeira", text: "O uso de equipamentos de madeira na cozinha deve ser evitado. Isto porque a madeira passa a apresentar fissuras e cortes, seja em tábuas, colheres ou outros equipamentos, decorrentes da interação com objetos cortantes, pelo ressecamento natural da madeira, ou a exposição a altas temperaturas. As fissúras sáo de difícil limpeza e exterilização, permitindo o crescimento de culturas contaminantes aos alimentos.", tag: [2, 4], fav: false, hasImg: false, imgURL: "")
             ]
-            
+            print(dict.count, dict.debugDescription)
             UserDefaults.Tips = dict
             
             print("set ud dict")
@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if userDefaults.object(forKey: "Favorites") == nil {
             let fav : Set<Int> = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
             print("init fav set")
-            
+            print(fav.count, fav.debugDescription)
             UserDefaults.Favorites = fav
             print("set ud fav")
         }

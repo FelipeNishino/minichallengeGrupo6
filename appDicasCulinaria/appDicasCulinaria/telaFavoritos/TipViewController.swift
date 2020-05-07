@@ -12,11 +12,50 @@ class TipViewController: UIViewController {
     @IBOutlet weak var tipTitle : UILabel!
     @IBOutlet weak var tipBody : UILabel!
     @IBOutlet weak var btnFav : UIButton!
+    var tipId = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        btnFav.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        tipTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+    
+        btnFav.addTarget(self, action: #selector(toggleFavorite), for: .touchUpInside)
+        
+        if UserDefaults.Favorites.contains(tipId) {
+            btnFav.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+        }
+    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//
+//        if self.isMovingFromParent {
+//            self.p
+//        }
+//    }
+    
+    @objc func toggleFavorite() {
+        
+        
+        if UserDefaults.Favorites.contains(tipId) {
+            defer {
+                print("tip \(tipId) unfavorited")
+            }
+            print(UserDefaults.Favorites.sorted().count, UserDefaults.Favorites.sorted().debugDescription)
+            btnFav.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+            UserDefaults.Favorites.remove(tipId)
+            print(UserDefaults.Favorites.sorted().count, UserDefaults.Favorites.sorted().debugDescription)
+        }
+        else {
+            defer {
+                print("tip \(tipId) favorited")
+            }
+            print(UserDefaults.Favorites.sorted().count, UserDefaults.Favorites.sorted().debugDescription)
+            btnFav.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+            UserDefaults.Favorites.insert(tipId)
+            print(UserDefaults.Favorites.sorted().count, UserDefaults.Favorites.sorted().debugDescription)
+        }
     }
     
 
