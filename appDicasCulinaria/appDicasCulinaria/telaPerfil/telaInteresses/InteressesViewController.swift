@@ -71,7 +71,9 @@ class interestsViewController: UIViewController {
             let tempBtn = self.view.viewWithTag(item) as? UIButton
             
             //verifica se o botão está selecionado
-            selectInterest(tempBtn!)
+            if tempBtn != nil {
+                selectInterest(tempBtn!)                
+            }
         }
     }
     
