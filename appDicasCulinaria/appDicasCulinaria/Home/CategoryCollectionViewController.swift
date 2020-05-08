@@ -16,16 +16,16 @@ class CategoryCollectionViewController : UICollectionViewController, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        defer {
+         //     defer {
         self.navigationController?.delegate = self
         
         //            collectionView.backgroundColor = .green
         collectionView.register(CategoryCollectionCell.self, forCellWithReuseIdentifier: cellId)
-        //        }
+               }
+        
+       //         print("clearing ud")
         //
-        //        print("clearing ud")
-        //
-        //        defer {
+       //         defer {
         //            print("ud cleared")
         //        }
         //        defer {
@@ -39,8 +39,8 @@ class CategoryCollectionViewController : UICollectionViewController, UICollectio
         //        do {
         //            UserDefaults.standard.removeObject(forKey: "Interests")
         //            print("interests cleared")
-        //        }
-    }
+         //       }
+    // }
     
     override func viewDidAppear(_ animated: Bool) {
         print("1")
