@@ -23,6 +23,7 @@ extension UserDefaults {
             
             tipData?.forEach({ (key: String, value: Data) in
                 dict.updateValue(try! PropertyListDecoder().decode(Tip.self, from: value), forKey: key)
+                
             })
             
             return dict
