@@ -71,7 +71,8 @@ extension FavoritesViewController : UICollectionViewDataSource {
         cell.backgroundColorView.backgroundColor = .init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
         cell.button.addTarget(self, action: #selector(openTip), for: .touchUpInside)
         cell.button.tag = Int(favIndex)!
-        
+        print("Nome passado: \(tips[favIndex]!.imgURL)")
+        cell.backgroundImage.image = UIImage(named: tips[favIndex]!.imgURL)
         return cell
     }
     
