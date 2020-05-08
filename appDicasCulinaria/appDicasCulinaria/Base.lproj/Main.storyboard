@@ -16,6 +16,16 @@
             </objects>
             <point key="canvasLocation" x="25" y="512"/>
         </scene>
+        <!--TelaPesquisa-->
+        <scene sceneID="UEu-rV-Tfa">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TelaPesquisa.storyboard" storyboardName="TelaPesquisa" id="EWc-Iv-hRX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pesquisar" image="magnifyingglass" catalog="system" id="Rrq-bc-ygR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkf-I8-hfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="500"/>
+        </scene>
         <!--Perfil-->
         <scene sceneID="ovT-uO-YIT">
             <objects>
@@ -41,6 +51,10 @@
                         <segue destination="vlQ-4n-FoW" kind="relationship" relationship="viewControllers" id="u6p-MU-FCv"/>
                         <segue destination="CDk-Ql-JId" kind="relationship" relationship="viewControllers" id="jsI-cY-Any"/>
                         <segue destination="uwt-r7-yi1" kind="relationship" relationship="viewControllers" id="0cn-Ag-N5j"/>
+                        <segue destination="2gm-R3-sHd" kind="relationship" relationship="viewControllers" id="7jo-uq-QSr"/>
+                        <segue destination="CDk-Ql-JId" kind="relationship" relationship="viewControllers" id="dmf-8I-bgh"/>
+                        <segue destination="uwt-r7-yi1" kind="relationship" relationship="viewControllers" id="CZY-g2-43G"/>
+                        <segue destination="EWc-Iv-hRX" kind="relationship" relationship="viewControllers" id="Cpv-mC-2lo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8V-gV-rQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -60,6 +74,7 @@
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
     </resources>

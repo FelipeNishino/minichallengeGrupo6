@@ -66,7 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.Interests = interests
             print("set ud interests")
         }
+
         print("exit delegate ud init")
+        
         
         return true
     }

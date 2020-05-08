@@ -13,6 +13,7 @@ extension UserDefaults {
         static let Tips = "Tips"
         static let Interests = "Interests"
         static let Favorites = "Favorites"
+        static let Search = "Search"
     }
     
     class var Tips : Dictionary<String, Tip> {
@@ -21,7 +22,7 @@ extension UserDefaults {
             var dict = [String : Tip]()
             
             tipData?.forEach({ (key: String, value: Data) in
-                dict.updateValue(try! PropertyListDecoder().decode(Tip.self, from: value), forKey: key)
+
             })
             
             return dict
@@ -62,4 +63,5 @@ extension UserDefaults {
             standard.set(array, forKey: Keys.Favorites)
         }
     }
+
 }
