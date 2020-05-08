@@ -16,7 +16,6 @@ class CategoryCollectionCell : UICollectionViewCell, UICollectionViewDataSource,
     var keys = [String]()
     weak var delegate : CategoryCollectionViewController?
     
-    
     let lblCategory : UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
@@ -27,9 +26,10 @@ class CategoryCollectionCell : UICollectionViewCell, UICollectionViewDataSource,
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         
-        let collectionView = UICollectionView(frame: .init(x: 0, y: 0, width: 375, height: 150), collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: .init(x: 0, y: 0, width: 375, height: 200), collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .clear
+        collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
     
@@ -47,6 +47,8 @@ class CategoryCollectionCell : UICollectionViewCell, UICollectionViewDataSource,
         addSubview(tipscollectionview)
         addSubview(lblCategory)
         
+        lblCategory.font = UIFont.systemFont(ofSize: 32)
+        
         tipscollectionview.dataSource = self
         tipscollectionview.delegate = self
         
@@ -58,7 +60,7 @@ class CategoryCollectionCell : UICollectionViewCell, UICollectionViewDataSource,
         
         constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-14-[vtips]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["vtips" : tipscollectionview])
         
-        constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|[vlbl(30)][vtips]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["vlbl" : lblCategory, "vtips" : tipscollectionview])
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-14-[vlbl(30)][vtips]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["vlbl" : lblCategory, "vtips" : tipscollectionview])
         //        constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|[vtips]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["vtips" : tipscollectionview])
         
         NSLayoutConstraint.activate(constraints)
@@ -108,10 +110,14 @@ class CategoryCollectionCell : UICollectionViewCell, UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: 100, height: 100)
+        return CGSize.init(width: 150, height: 200)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt: Int) -> UIEdgeInsets {
         return UIEdgeInsets.init(top: 0, left: 20, bottom: 0, right: 20)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat(100)
     }
 }

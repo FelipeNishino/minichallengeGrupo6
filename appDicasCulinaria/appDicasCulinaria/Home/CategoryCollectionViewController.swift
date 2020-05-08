@@ -96,7 +96,7 @@ class CategoryCollectionViewController : UICollectionViewController, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: view.frame.width, height: 150)
+        return CGSize.init(width: view.frame.width, height: 300)
     }
     
     

@@ -24,15 +24,17 @@ class TipCollectionCell : UICollectionViewCell {
     let imageView : UIImageView = {
         let iv = UIImageView()
 //        iv.image = UIImage(named: "placeholderImg")
-        iv.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        iv.frame = CGRect(x: 0, y: 0, width: 150, height: 200)
+        iv.layer.cornerRadius = 10
         iv.contentMode = .scaleAspectFill
         return iv
     }()
     
     let backgroundColorView : UIView = {
         let view = UIView()
-        view.frame = CGRect(x: 0, y: 80, width: 100, height: 20)
-        view.backgroundColor = .init(white: 1.0, alpha: 0.5)
+        view.frame = CGRect(x: 0, y: 160, width: 150, height: 40)
+        view.layer.cornerRadius = 10
+        view.backgroundColor = .init(white: 0.5, alpha: 0.5)
         return view
     }()
     
@@ -40,16 +42,17 @@ class TipCollectionCell : UICollectionViewCell {
         let lbl = UILabel()
         lbl.text = "Titulo"
         lbl.font = UIFont.systemFont(ofSize: 14)
-        lbl.frame = CGRect(x: 0, y: 80, width: 100, height: 20)
+        lbl.frame = CGRect(x: 10, y: 160, width: 140, height: 40)
         lbl.numberOfLines = 0
         return lbl
     }()
     
     let btnTip : UIButton = {
         let btn = UIButton()
-        btn.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        //        btn.layer.borderColor = .init(srgbRed: 0.8, green: 0, blue: 0.8, alpha: 1.0)
-        //        btn.layer.borderWidth = 5
+        btn.frame = CGRect(x: 0, y: 0, width: 150, height: 200)
+        btn.layer.cornerRadius = 10
+        btn.layer.borderColor = .init(srgbRed: 0, green: 0, blue: 0, alpha: 1)//.init(srgbRed: 0.8, green: 0, blue: 0.8, alpha: 1.0)
+                btn.layer.borderWidth = 5
         btn.isUserInteractionEnabled = true
         return btn
     }()
