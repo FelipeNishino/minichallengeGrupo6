@@ -16,31 +16,31 @@ class CategoryCollectionViewController : UICollectionViewController, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         //     defer {
+//              defer {
         self.navigationController?.delegate = self
         
         //            collectionView.backgroundColor = .green
         collectionView.register(CategoryCollectionCell.self, forCellWithReuseIdentifier: cellId)
-               }
+//               }
         
-       //         print("clearing ud")
-        //
-       //         defer {
-        //            print("ud cleared")
-        //        }
-        //        defer {
-        //            UserDefaults.standard.removeObject(forKey: "Tips")
-        //            print("tips cleared")
-        //        }
-        //        defer {
-        //            UserDefaults.standard.removeObject(forKey: "Favorites")
-        //            print("favorites cleared")
-        //        }
-        //        do {
-        //            UserDefaults.standard.removeObject(forKey: "Interests")
-        //            print("interests cleared")
-         //       }
-    // }
+//                print("clearing ud")
+//
+//                defer {
+//                    print("ud cleared")
+//                }
+//                defer {
+//                    UserDefaults.standard.removeObject(forKey: "Tips")
+//                    print("tips cleared")
+//                }
+//                defer {
+//                    UserDefaults.standard.removeObject(forKey: "Favorites")
+//                    print("favorites cleared")
+//                }
+//                do {
+//                    UserDefaults.standard.removeObject(forKey: "Interests")
+//                    print("interests cleared")
+//                }
+     }
     
     override func viewDidAppear(_ animated: Bool) {
         print("1")
