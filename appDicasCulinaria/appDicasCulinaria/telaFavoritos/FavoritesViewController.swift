@@ -84,8 +84,11 @@ extension FavoritesViewController : UICollectionViewDataSource {
         self.navigationController?.pushViewController(selectedFavTip, animated: true)
         
         var tips = UserDefaults.Tips
+        selectedFavTip.loadViewIfNeeded()
+        
+        let tips = UserDefaults.Tips
         let key = String(sender.tag)
-        let tag : Category = Tags.findTag(searchId: (tips[key]?.tag.removeFirst())!).rawValue
+        let tag : Category = Tags.findTag(searchId: (tips[key]?.tag.sorted().first)!).rawValue
         
         selectedFavTip.tipId = Int(key)!
         
@@ -99,7 +102,6 @@ extension FavoritesViewController : UICollectionViewDataSource {
         selectedFavTip.tipTitle.adjustsFontSizeToFitWidth = true
         selectedFavTip.tipTitle.frame.size.height = selectedFavTip.tipTitle.intrinsicContentSize.height
         selectedFavTip.tipTitle.sizeToFit()
-        
         selectedFavTip.tipBody.text = tips[key]?.text
         selectedFavTip.tipBody.frame.size.height = selectedFavTip.tipBody.intrinsicContentSize.height
     }
