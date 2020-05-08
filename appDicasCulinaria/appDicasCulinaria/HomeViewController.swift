@@ -17,14 +17,24 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func ApagarUD(_ sender: Any) {
-        let userDef = UserDefaults.standard
-        
+    @IBAction func ApagarUD(_ sender: Any) {        
         print("clearing ud")
-        userDef.removeObject(forKey: "Tips")
-        userDef.removeObject(forKey: "Favorites")
-        userDef.removeObject(forKey: "Interests")
-        print("ud cleared")
+        
+        defer {
+            print("ud cleared")
+        }
+        defer {
+            UserDefaults.standard.removeObject(forKey: "Tips")
+            print("tips cleared")
+        }
+        defer {
+            UserDefaults.standard.removeObject(forKey: "Favorites")
+            print("favorites cleared")
+        }
+        do {
+            UserDefaults.standard.removeObject(forKey: "Interests")
+            print("interests cleared")
+        }
     }
    
     /*
