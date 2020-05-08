@@ -12,23 +12,19 @@ import UIKit
 class SearchViewController: UIViewController {
     
     var searchController: UISearchController!
+        var data = [Tip]()
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchContainerView: UIView!
     var originialDataSource: [String] = []
     var currentDataSource: [String] = []
     
-    var setSearch = UserDefaults.Search
     
     
     override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Search", style: .plain, target: self, action: #selector(SearchSomething))
-    self.navigationItem.rightBarButtonItem!.isEnabled = false
-        
-         for Index in 1...dicas.count{
-         addProductToDataSource( product: "DICA #\(Index)" )
-         }
-         
+
+    
          
          
          currentDataSource = originialDataSource
@@ -58,30 +54,15 @@ class SearchViewController: UIViewController {
             
             
             currentDataSource = filteredResults
+            collectionView.reloadData()
     
         }
     }
     
     func restoreCurrentDataSource() {
         currentDataSource = originialDataSource
+        collectionView.reloadData()
     }
-    
-
-@objc func SearchSomething() {
-    UserDefaults.Search = setSearch
-    refreshSaveBtn()
-}
-    @objc func refreshSaveBtn() {
-         //se lado A e B (adicionar e remover) não estiverem igualmente vazios (diagrama de Venn), então o usuário selecionou algo para acrescentar -> habilite o botão
-         if !setSearch.isEmpty {
-             self.navigationItem.rightBarButtonItem!.isEnabled = true
-         }
-             
-         //lado A e B estão iguais, nada foi adicionado ou removido -> mantenha o botão de save desabilitado
-         else {
-             self.navigationItem.rightBarButtonItem!.isEnabled = false
-         }
-     }
     
 }
 extension SearchViewController: UISearchResultsUpdating{
@@ -114,5 +95,55 @@ extension SearchViewController: UISearchBarDelegate {
         }
         
     }
+}
+extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return currentDataSource.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchCollectionViewCell", for: indexPath)as! SearchCollectionViewCell
+        
+        cell.Titulo.text = data[indexPath.row].title
+        cell.CaixaDeTexto.backgroundColor = .init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
+        cell.Botao.addTarget(self, action: #selector(openTip), for: .touchUpInside)
+        cell.Botao.tag = Int(indexPath.row)
+        
+        return cell   }
+    
+    
+    @objc func openTip(_ sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Tip", bundle:nil)
+        
+        let selectedTip = storyBoard.instantiateViewController(withIdentifier: "Tip") as! TipViewController
+        //selectedFavTip.body.text = "abacaxi"
+        
+        
+        selectedTip.loadViewIfNeeded()
+        
+        var tips = UserDefaults.Tips
+        let key = String(sender.tag)
+        let tag : Category = Tags.findTag(searchId: (tips[key]?.tag.removeFirst())!).rawValue
+        
+        selectedTip.title = tag.name
+        
+        selectedTip.btnFav.topAnchor.constraint(equalTo: selectedTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        selectedTip.tipTitle.topAnchor.constraint(equalTo: selectedTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        //        selectedFavTip.tipTitle.bottomAnchor.constraint(equalTo: selectedFavTip.btnFav.bottomAnchor).isActive = true
+        
+        selectedTip.tipTitle.text = tips[key]?.title
+        selectedTip.tipTitle.adjustsFontSizeToFitWidth = true
+        selectedTip.tipTitle.frame.size.height = selectedTip.tipTitle.intrinsicContentSize.height
+        selectedTip.tipTitle.sizeToFit()
+        
+        selectedTip.tipBody.text = tips[key]?.text
+        selectedTip.tipBody.frame.size.height = selectedTip.tipBody.intrinsicContentSize.height
+    }
+    
+    //
+
+
 }
 

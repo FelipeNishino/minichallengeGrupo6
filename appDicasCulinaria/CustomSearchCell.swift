@@ -6,4 +6,18 @@
 //  Copyright © 2020 Felipe Nishino. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SearchCollectionViewCell: UICollectionViewCell {
+    override func awakeFromNib() {
+          super.awakeFromNib()
+          // Initialization code
+      }
+    
+    @IBOutlet weak var Botao: UIButton!
+    @IBOutlet weak var Imagem: UIImageView!
+    @IBOutlet weak var CaixaDeTexto: UIView!
+    @IBOutlet weak var Titulo: UILabel!
+    }
+    
+

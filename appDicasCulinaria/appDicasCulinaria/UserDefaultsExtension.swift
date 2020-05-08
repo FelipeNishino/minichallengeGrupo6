@@ -63,14 +63,5 @@ extension UserDefaults {
             standard.set(array, forKey: Keys.Favorites)
         }
     }
-    class var Search : Set<String> {
-        get {
-            let set = Set(standard.object(forKey: Keys.Search) as! [String])
-            return set
-        }
-        set {
-            let array = Array(newValue)
-            standard.set(array, forKey: Keys.Search)
-        }
-    }
+
 }
