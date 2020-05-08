@@ -23,7 +23,7 @@ class TipCollectionCell : UICollectionViewCell {
     
     let imageView : UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "placeholderImg")
+//        iv.image = UIImage(named: "placeholderImg")
         iv.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         iv.contentMode = .scaleAspectFill
         return iv

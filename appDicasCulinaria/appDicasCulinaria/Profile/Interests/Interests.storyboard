@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NuI-Se-Yqw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NuI-Se-Yqw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-uR-IC8">
                                         <rect key="frame" x="8" y="0.0" width="398" height="930"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
                                                 <rect key="frame" x="40.5" y="99" width="317.5" height="61"/>
                                                 <string key="text">Selecione os tópicos que você possui 
 interesse para que eles possam aparecer 
@@ -376,42 +376,6 @@ na sua tela inicial</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSg-8T-QHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="12J-PZ-1qY">
-            <objects>
-                <viewController id="AQb-OL-0a3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sNg-fl-Rq1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05e-8o-Hjk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <offsetWrapper key="textShadowOffset" horizontal="-250" vertical="0.0"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem leftItemsSupplementBackButton="YES" id="9oR-Bg-q3I">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="i6y-Mi-tpe"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="tKz-p9-SxH"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="leading" secondItem="sNg-fl-Rq1" secondAttribute="leading" id="3ox-uN-FEY"/>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="top" secondItem="sNg-fl-Rq1" secondAttribute="top" constant="44" id="7Rq-B4-BuZ"/>
-                            <constraint firstItem="05e-8o-Hjk" firstAttribute="centerX" secondItem="sNg-fl-Rq1" secondAttribute="centerX" id="J0n-9f-GW0"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="M1x-65-ez8"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jmt-wp-QvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="976" y="-47"/>
         </scene>
     </scenes>
 </document>

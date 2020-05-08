@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wL-VL-ANa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1479.7101449275362" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1117" y="115"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="1fR-yq-14r">
@@ -121,51 +120,25 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
-        <!--Interesses-->
+        <!--Interests-->
         <scene sceneID="dfS-1t-w7y">
             <objects>
-                <viewControllerPlaceholder storyboardName="Interesses" id="MS8-8u-E7k" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Interests" id="MS8-8u-E7k" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5Eh-nh-fdW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHl-oY-zY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="-92"/>
+            <point key="canvasLocation" x="1788" y="-89"/>
         </scene>
-        <!--telaFAQ2-->
+        <!--FAQ-->
         <scene sceneID="EfT-Tv-m86">
             <objects>
-                <viewControllerPlaceholder storyboardName="telaFAQ2" id="KaL-PH-OKt" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="FAQ" id="KaL-PH-OKt" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="1SQ-U6-Z30"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Pl-GR-Haw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041" y="-48"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gfX-lr-MlC">
-            <objects>
-                <viewController id="Wlt-ac-d39" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FD2-G9-rSY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQa-gb-41J">
-                                <rect key="frame" x="0.0" y="107" width="414" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="THJ-dh-C6K"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L0u-E0-QVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2929" y="330"/>
+            <point key="canvasLocation" x="1793" y="-45"/>
         </scene>
     </scenes>
     <resources>

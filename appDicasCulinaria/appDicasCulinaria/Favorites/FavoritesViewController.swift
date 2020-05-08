@@ -83,7 +83,6 @@ extension FavoritesViewController : UICollectionViewDataSource {
         
         self.navigationController?.pushViewController(selectedFavTip, animated: true)
         
-        var tips = UserDefaults.Tips
         selectedFavTip.loadViewIfNeeded()
         
         let tips = UserDefaults.Tips

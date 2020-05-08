@@ -18,7 +18,6 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func ApagarUD(_ sender: Any) {        
-    @IBAction func ApagarUD(_ sender: Any) {
         print("clearing ud")
         
         defer {

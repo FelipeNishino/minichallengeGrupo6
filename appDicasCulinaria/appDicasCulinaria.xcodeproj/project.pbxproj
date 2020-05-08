@@ -7,49 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E7E057A24607DFB00CE31D1 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E057924607DFB00CE31D1 /* Interest.swift */; };
-		2E7E057C246081B500CE31D1 /* carrossel_screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E057B246081B500CE31D1 /* carrossel_screen.storyboard */; };
-		2E7E057E246087E300CE31D1 /* carrossellcollectionviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E057D246087E300CE31D1 /* carrossellcollectionviewcell.swift */; };
-		2E7E05802460E96000CE31D1 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */; };
-		2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */; };
-		2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */; };
-		839BAA1324578B9600D040E4 /* InteressesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BAA1224578B9600D040E4 /* InteressesViewController.swift */; };
-		83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */; };
-		83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */; };
-		83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */; };
+		839BAA1324578B9600D040E4 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BAA1224578B9600D040E4 /* InterestsViewController.swift */; };
+		83CE34A924467ADF00854E98 /* FAQ.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE34A824467ADF00854E98 /* FAQ.storyboard */; };
+		83CE34AB24467D0D00854E98 /* FAQTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AA24467D0D00854E98 /* FAQTableController.swift */; };
+		83CE34AD24467D3400854E98 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE34AC24467D3400854E98 /* FAQTableViewCell.swift */; };
+		E20565942465519800E79078 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20565932465519800E79078 /* Tip.swift */; };
 		E2192C822465215400C7DB35 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2192C812465215400C7DB35 /* ProfileTableViewController.swift */; };
 		E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B0243CFBEE00507D29 /* AppDelegate.swift */; };
 		E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B2243CFBEE00507D29 /* SceneDelegate.swift */; };
-		E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583B4243CFBEE00507D29 /* ViewController.swift */; };
 		E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25583B6243CFBEE00507D29 /* Main.storyboard */; };
 		E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25583B9243CFBF200507D29 /* Assets.xcassets */; };
 		E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */; };
 		E25583C8243CFBF200507D29 /* appDicasCulinariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583C7243CFBF200507D29 /* appDicasCulinariaTests.swift */; };
 		E25583D3243CFBF200507D29 /* appDicasCulinariaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */; };
 		E25F7C9F2458C36D0001E2BB /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */; };
-		E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278FF72245221AF001FAEE7 /* Interesses.storyboard */; };
-		E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278FF74245222D0001FAEE7 /* buttomn.swift */; };
+		E278FF73245221AF001FAEE7 /* Interests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278FF72245221AF001FAEE7 /* Interests.storyboard */; };
+		E278FF75245222D0001FAEE7 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278FF74245222D0001FAEE7 /* button.swift */; };
 		E28AA133245B55F600C60E93 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28AA135245B5AC900C60E93 /* HomeViewController.swift */; };
-		E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B959F2448FE0700EFA536 /* customBtn.swift */; };
-		E28B95A22449015200EFA536 /* customBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28B95A12449015200EFA536 /* customBtn.xib */; };
-		E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B4433624520D3E0054A41A /* Perfil.storyboard */; };
+		E2B4433724520D3E0054A41A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B4433624520D3E0054A41A /* Profile.storyboard */; };
 		E2BBE1242464E62500536421 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BBE1232464E62500536421 /* Home.storyboard */; };
 		E2BBE1262464E65B00536421 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBE1252464E65B00536421 /* CategoryCollectionViewController.swift */; };
 		E2BBE1282464E67A00536421 /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBE1272464E67A00536421 /* CategoryCollectionCell.swift */; };
 		E2BBE12A2464E68600536421 /* TipCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBE1292464E68600536421 /* TipCollectionCell.swift */; };
-		E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C8E0FB245A78A2007D4B54 /* Tip.swift */; };
 		E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */; };
 		E2F3992A2460B7EB00F19125 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F399282460B7EB00F19125 /* FavoriteCollectionViewCell.swift */; };
 		E2F3992D2460C2BB00F19125 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3992C2460C2BA00F19125 /* FavoritesViewController.swift */; };
 		E2F399312460FBFE00F19125 /* Tip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F399302460FBFE00F19125 /* Tip.storyboard */; };
 		E2F399332461001A00F19125 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F399322461001A00F19125 /* TipViewController.swift */; };
 		E2F3993524612C4000F19125 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3993424612C4000F19125 /* Tags.swift */; };
-		EC20607C245B68350082D7EB /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20607B245B68350082D7EB /* Tip.swift */; };
-		EC44657F24628C84001FE25D /* TelaBusca.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44657E24628C84001FE25D /* TelaBusca.swift */; };
-		EC44658324628CB9001FE25D /* CustomSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44658224628CB9001FE25D /* CustomSearchCell.swift */; };
-		EC44658524628CCA001FE25D /* TelaPesquisa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC44658424628CCA001FE25D /* TelaPesquisa.storyboard */; };
-		ECB8AB76246514490006883F /* SearchCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8AB75246514490006883F /* SearchCollectionView.swift */; };
+		EC44657F24628C84001FE25D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44657E24628C84001FE25D /* SearchViewController.swift */; };
+		EC44658324628CB9001FE25D /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44658224628CB9001FE25D /* SearchCollectionViewCell.swift */; };
+		EC44658524628CCA001FE25D /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC44658424628CCA001FE25D /* Search.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,21 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E7E057924607DFB00CE31D1 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
-		2E7E057B246081B500CE31D1 /* carrossel_screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = carrossel_screen.storyboard; sourceTree = "<group>"; };
-		2E7E057D246087E300CE31D1 /* carrossellcollectionviewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrossellcollectionviewcell.swift; sourceTree = "<group>"; };
-		2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
-		2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tela_dica_teste.storyboard; sourceTree = "<group>"; };
-		2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tela_dica_teste_ViewController.swift; sourceTree = "<group>"; };
-		839BAA1224578B9600D040E4 /* InteressesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteressesViewController.swift; sourceTree = "<group>"; };
-		83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = telaFAQ2.storyboard; sourceTree = "<group>"; };
-		83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableController.swift; sourceTree = "<group>"; };
-		83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ2TableViewCell.swift; sourceTree = "<group>"; };
+		839BAA1224578B9600D040E4 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		83CE34A824467ADF00854E98 /* FAQ.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAQ.storyboard; sourceTree = "<group>"; };
+		83CE34AA24467D0D00854E98 /* FAQTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableController.swift; sourceTree = "<group>"; };
+		83CE34AC24467D3400854E98 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		E20565932465519800E79078 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tip.swift; path = ../Tip.swift; sourceTree = "<group>"; };
 		E2192C812465215400C7DB35 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		E25583AD243CFBEE00507D29 /* appDicasCulinaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDicasCulinaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583B0243CFBEE00507D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25583B2243CFBEE00507D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E25583B4243CFBEE00507D29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E25583B7243CFBEE00507D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E25583B9243CFBF200507D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E25583BC243CFBF200507D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,28 +79,23 @@
 		E25583D2243CFBF200507D29 /* appDicasCulinariaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDicasCulinariaUITests.swift; sourceTree = "<group>"; };
 		E25583D4243CFBF200507D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
-		E278FF72245221AF001FAEE7 /* Interesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interesses.storyboard; sourceTree = "<group>"; };
-		E278FF74245222D0001FAEE7 /* buttomn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttomn.swift; sourceTree = "<group>"; };
-		E28AA135245B5AC900C60E93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E28B959F2448FE0700EFA536 /* customBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBtn.swift; sourceTree = "<group>"; };
-		E28B95A12449015200EFA536 /* customBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customBtn.xib; sourceTree = "<group>"; };
-		E2B4433624520D3E0054A41A /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		E278FF72245221AF001FAEE7 /* Interests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interests.storyboard; sourceTree = "<group>"; };
+		E278FF74245222D0001FAEE7 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
+		E28AA135245B5AC900C60E93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
+		E2B4433624520D3E0054A41A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		E2BBE1232464E62500536421 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		E2BBE1252464E65B00536421 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		E2BBE1272464E67A00536421 /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
 		E2BBE1292464E68600536421 /* TipCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCollectionCell.swift; sourceTree = "<group>"; };
-		E2C8E0FB245A78A2007D4B54 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		E2F399282460B7EB00F19125 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2F3992C2460C2BA00F19125 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		E2F399302460FBFE00F19125 /* Tip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tip.storyboard; sourceTree = "<group>"; };
 		E2F399322461001A00F19125 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		E2F3993424612C4000F19125 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
-		EC20607B245B68350082D7EB /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
-		EC44657E24628C84001FE25D /* TelaBusca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaBusca.swift; sourceTree = "<group>"; };
-		EC44658224628CB9001FE25D /* CustomSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchCell.swift; sourceTree = "<group>"; };
-		EC44658424628CCA001FE25D /* TelaPesquisa.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TelaPesquisa.storyboard; sourceTree = "<group>"; };
-		ECB8AB75246514490006883F /* SearchCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionView.swift; sourceTree = "<group>"; };
+		EC44657E24628C84001FE25D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EC44658224628CB9001FE25D /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC44658424628CCA001FE25D /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,51 +123,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EC368812450D34C009D7549 /* telaDica */ = {
+		2EC368812450D34C009D7549 /* Tip */ = {
 			isa = PBXGroup;
 			children = (
-				2EC36875244F7660009D7549 /* tela_dica_teste.storyboard */,
-				2EC3687F2450B9D6009D7549 /* tela_dica_teste_ViewController.swift */,
+				E2F399302460FBFE00F19125 /* Tip.storyboard */,
+				E2F399322461001A00F19125 /* TipViewController.swift */,
 			);
-			path = telaDica;
+			path = Tip;
 			sourceTree = "<group>";
 		};
-		831DA56624491B5F00EA1F1E /* telaFAQ2 */ = {
+		831DA56624491B5F00EA1F1E /* FAQ */ = {
 			isa = PBXGroup;
 			children = (
-				83CE34AA24467D0D00854E98 /* FAQ2TableController.swift */,
-				83CE34AC24467D3400854E98 /* FAQ2TableViewCell.swift */,
-				83CE34A824467ADF00854E98 /* telaFAQ2.storyboard */,
+				83CE34AA24467D0D00854E98 /* FAQTableController.swift */,
+				83CE34AC24467D3400854E98 /* FAQTableViewCell.swift */,
+				83CE34A824467ADF00854E98 /* FAQ.storyboard */,
 			);
-			path = telaFAQ2;
+			path = FAQ;
 			sourceTree = "<group>";
 		};
-		E22F9704245377EC00C4AB1E /* telaPerfil */ = {
+		E205659024654FAA00E79078 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				E2B4433624520D3E0054A41A /* Perfil.storyboard */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		E22F9704245377EC00C4AB1E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4433624520D3E0054A41A /* Profile.storyboard */,
 				E2192C812465215400C7DB35 /* ProfileTableViewController.swift */,
-				831DA56624491B5F00EA1F1E /* telaFAQ2 */,
-				E22F97052453781700C4AB1E /* telaInteresses */,
+				831DA56624491B5F00EA1F1E /* FAQ */,
+				E22F97052453781700C4AB1E /* Interests */,
 			);
-			path = telaPerfil;
+			path = Profile;
 			sourceTree = "<group>";
 		};
-		E22F97052453781700C4AB1E /* telaInteresses */ = {
+		E22F97052453781700C4AB1E /* Interests */ = {
 			isa = PBXGroup;
 			children = (
-				E278FF72245221AF001FAEE7 /* Interesses.storyboard */,
-				839BAA1224578B9600D040E4 /* InteressesViewController.swift */,
+				E278FF72245221AF001FAEE7 /* Interests.storyboard */,
+				839BAA1224578B9600D040E4 /* InterestsViewController.swift */,
 			);
-			path = telaInteresses;
+			path = Interests;
 			sourceTree = "<group>";
 		};
 		E22F97062453785600C4AB1E /* customControls */ = {
 			isa = PBXGroup;
 			children = (
-				E278FF74245222D0001FAEE7 /* buttomn.swift */,
-				E28B959F2448FE0700EFA536 /* customBtn.swift */,
-				E28B95A12449015200EFA536 /* customBtn.xib */,
+				E278FF74245222D0001FAEE7 /* button.swift */,
 			);
 			path = customControls;
 			sourceTree = "<group>";
@@ -201,10 +184,7 @@
 				E25583C6243CFBF200507D29 /* appDicasCulinariaTests */,
 				E25583D1243CFBF200507D29 /* appDicasCulinariaUITests */,
 				E25583AE243CFBEE00507D29 /* Products */,
-				EC44658424628CCA001FE25D /* TelaPesquisa.storyboard */,
-				ECB8AB75246514490006883F /* SearchCollectionView.swift */,
-				EC44657E24628C84001FE25D /* TelaBusca.swift */,
-				EC44658224628CB9001FE25D /* CustomSearchCell.swift */,
+				E205659024654FAA00E79078 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,26 +201,22 @@
 		E25583AF243CFBEE00507D29 /* appDicasCulinaria */ = {
 			isa = PBXGroup;
 			children = (
-				E2BBE1222464E5ED00536421 /* Home */,
 				E25583B0243CFBEE00507D29 /* AppDelegate.swift */,
-				E28AA135245B5AC900C60E93 /* HomeViewController.swift */,
 				E25583B2243CFBEE00507D29 /* SceneDelegate.swift */,
+				E28AA135245B5AC900C60E93 /* HomeViewController.swift */,
 				E2F3993424612C4000F19125 /* Tags.swift */,
-				E2C8E0FB245A78A2007D4B54 /* Tip.swift */,
-				E25583B4243CFBEE00507D29 /* ViewController.swift */,
+				E20565932465519800E79078 /* Tip.swift */,
 				E2D52456245A01140002A9B4 /* UserDefaultsExtension.swift */,
 				E25583BB243CFBF200507D29 /* LaunchScreen.storyboard */,
 				E25583B6243CFBEE00507D29 /* Main.storyboard */,
 				E22F97062453785600C4AB1E /* customControls */,
-				2EC368812450D34C009D7549 /* telaDica */,
-				E25F7C9D2458C2B80001E2BB /* telaFavoritos */,
-				E22F9704245377EC00C4AB1E /* telaPerfil */,
+				E25F7C9D2458C2B80001E2BB /* Favorites */,
+				E2BBE1222464E5ED00536421 /* Home */,
+				E22F9704245377EC00C4AB1E /* Profile */,
+				E2CF393924655505006166FB /* Search */,
+				2EC368812450D34C009D7549 /* Tip */,
 				E25583B9243CFBF200507D29 /* Assets.xcassets */,
 				E25583BE243CFBF200507D29 /* Info.plist */,
-				2E7E057924607DFB00CE31D1 /* Interest.swift */,
-				2E7E057B246081B500CE31D1 /* carrossel_screen.storyboard */,
-				2E7E057D246087E300CE31D1 /* carrossellcollectionviewcell.swift */,
-				2E7E057F2460E96000CE31D1 /* InterestsViewController.swift */,
 			);
 			path = appDicasCulinaria;
 			sourceTree = "<group>";
@@ -263,16 +239,14 @@
 			path = appDicasCulinariaUITests;
 			sourceTree = "<group>";
 		};
-		E25F7C9D2458C2B80001E2BB /* telaFavoritos */ = {
+		E25F7C9D2458C2B80001E2BB /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
 				E25F7C9E2458C36D0001E2BB /* Favorites.storyboard */,
 				E2F3992C2460C2BA00F19125 /* FavoritesViewController.swift */,
 				E2F399282460B7EB00F19125 /* FavoriteCollectionViewCell.swift */,
-				E2F399302460FBFE00F19125 /* Tip.storyboard */,
-				E2F399322461001A00F19125 /* TipViewController.swift */,
 			);
-			path = telaFavoritos;
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		E2BBE1222464E5ED00536421 /* Home */ = {
@@ -284,6 +258,16 @@
 				E2BBE1292464E68600536421 /* TipCollectionCell.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E2CF393924655505006166FB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EC44658424628CCA001FE25D /* Search.storyboard */,
+				EC44657E24628C84001FE25D /* SearchViewController.swift */,
+				EC44658224628CB9001FE25D /* SearchCollectionViewCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,18 +375,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25583BD243CFBF200507D29 /* LaunchScreen.storyboard in Resources */,
-				E278FF73245221AF001FAEE7 /* Interesses.storyboard in Resources */,
+				E278FF73245221AF001FAEE7 /* Interests.storyboard in Resources */,
 				E2F399312460FBFE00F19125 /* Tip.storyboard in Resources */,
 				E2BBE1242464E62500536421 /* Home.storyboard in Resources */,
 				E25F7C9F2458C36D0001E2BB /* Favorites.storyboard in Resources */,
-				E28B95A22449015200EFA536 /* customBtn.xib in Resources */,
-				E2B4433724520D3E0054A41A /* Perfil.storyboard in Resources */,
+				E2B4433724520D3E0054A41A /* Profile.storyboard in Resources */,
 				E25583BA243CFBF200507D29 /* Assets.xcassets in Resources */,
-				83CE34A924467ADF00854E98 /* telaFAQ2.storyboard in Resources */,
+				83CE34A924467ADF00854E98 /* FAQ.storyboard in Resources */,
 				E25583B8243CFBEE00507D29 /* Main.storyboard in Resources */,
-				2EC36876244F7660009D7549 /* tela_dica_teste.storyboard in Resources */,
-				2E7E057C246081B500CE31D1 /* carrossel_screen.storyboard in Resources */,
-				EC44658524628CCA001FE25D /* TelaPesquisa.storyboard in Resources */,
+				EC44658524628CCA001FE25D /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,35 +409,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F3992A2460B7EB00F19125 /* FavoriteCollectionViewCell.swift in Sources */,
-				E25583B5243CFBEE00507D29 /* ViewController.swift in Sources */,
 				E2BBE1262464E65B00536421 /* CategoryCollectionViewController.swift in Sources */,
 				E2F3992D2460C2BB00F19125 /* FavoritesViewController.swift in Sources */,
-				E2C8E0FC245A78A2007D4B54 /* Tip.swift in Sources */,
-				ECB8AB76246514490006883F /* SearchCollectionView.swift in Sources */,
-				EC20607C245B68350082D7EB /* Tip.swift in Sources */,
-				E278FF75245222D0001FAEE7 /* buttomn.swift in Sources */,
-				EC44657F24628C84001FE25D /* TelaBusca.swift in Sources */,
-				839BAA1324578B9600D040E4 /* InteressesViewController.swift in Sources */,
-				E28B95A02448FE0700EFA536 /* customBtn.swift in Sources */,
+				E278FF75245222D0001FAEE7 /* button.swift in Sources */,
+				EC44657F24628C84001FE25D /* SearchViewController.swift in Sources */,
+				839BAA1324578B9600D040E4 /* InterestsViewController.swift in Sources */,
 				E2192C822465215400C7DB35 /* ProfileTableViewController.swift in Sources */,
-				2E7E057A24607DFB00CE31D1 /* Interest.swift in Sources */,
 				E25583B1243CFBEE00507D29 /* AppDelegate.swift in Sources */,
-				83CE34AB24467D0D00854E98 /* FAQ2TableController.swift in Sources */,
+				83CE34AB24467D0D00854E98 /* FAQTableController.swift in Sources */,
 				E2F3993524612C4000F19125 /* Tags.swift in Sources */,
-				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
+				83CE34AD24467D3400854E98 /* FAQTableViewCell.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
-				EC44658324628CB9001FE25D /* CustomSearchCell.swift in Sources */,
+				EC44658324628CB9001FE25D /* SearchCollectionViewCell.swift in Sources */,
+				E20565942465519800E79078 /* Tip.swift in Sources */,
 				E2F399332461001A00F19125 /* TipViewController.swift in Sources */,
 				E2D52457245A01140002A9B4 /* UserDefaultsExtension.swift in Sources */,
-				2E7E05802460E96000CE31D1 /* InterestsViewController.swift in Sources */,
-				83CE34AD24467D3400854E98 /* FAQ2TableViewCell.swift in Sources */,
+				83CE34AD24467D3400854E98 /* FAQTableViewCell.swift in Sources */,
 				E2BBE12A2464E68600536421 /* TipCollectionCell.swift in Sources */,
 				E25583B3243CFBEE00507D29 /* SceneDelegate.swift in Sources */,
 				E2BBE1282464E67A00536421 /* CategoryCollectionCell.swift in Sources */,
-				2E7E057E246087E300CE31D1 /* carrossellcollectionviewcell.swift in Sources */,
 				E28AA136245B5AC900C60E93 /* HomeViewController.swift in Sources */,
 				E28AA133245B55F600C60E93 /* (null) in Sources */,
-				2EC368802450B9D6009D7549 /* tela_dica_teste_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
