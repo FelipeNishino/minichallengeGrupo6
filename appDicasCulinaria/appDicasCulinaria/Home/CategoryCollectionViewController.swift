@@ -12,12 +12,12 @@ class CategoryCollectionViewController : UICollectionViewController, UICollectio
     let cellId = "categoryCellId"
     let interests = UserDefaults.Interests
     let tips = UserDefaults.Tips
-    var firstLoad = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //              defer {
         self.navigationController?.delegate = self
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         
         //            collectionView.backgroundColor = .green
         collectionView.register(CategoryCollectionCell.self, forCellWithReuseIdentifier: cellId)
@@ -43,53 +43,38 @@ class CategoryCollectionViewController : UICollectionViewController, UICollectio
      }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("1")
         super.viewDidAppear(true)
-        //        print("view didappear")
-        if !firstLoad {
-            collectionView.reloadData()
-            firstLoad = true
-        }
-    }
-    
+        
+        collectionView.reloadData()
+    }    
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("2")
         var auxSet = Set<Int>()
         var auxSet2 = interests
-        
-        //        print("antes da condição: \(interests.debugDescription)")
-        
         
         for i in 0...auxSet2.count - 1 {
             let filteredTips = tips.filter{ key, value in
                 (tips[key]?.tag.contains(auxSet2.sorted()[i]))!
             }
-            
-            //            print("Dicas: \(tips.count), i: \(i)")
-            
+                        
             if filteredTips.isEmpty {
                 auxSet2.remove(auxSet2.sorted()[i])
             }
         }
-        
-        //        print("depois da condição: \(interests.debugDescription)")
-        
+                
         for i in 0...tips.count{
             auxSet.insert(i)
         }
-        //        print("dicas validas:\(auxSet.intersection(interests).count)")
         return auxSet.intersection(auxSet2).count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print("3")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCollectionCell
-        //        cell.backgroundColor = .blue
         
         let category = interests.sorted()[indexPath.row]
         cell.delegate = self
         cell.category = category
+        cell.categoryArray.append(category)
         cell.lblCategory.text = Tags.findTag(searchId: category).rawValue.name
         
         return cell

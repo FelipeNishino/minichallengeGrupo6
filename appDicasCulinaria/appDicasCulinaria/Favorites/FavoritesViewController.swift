@@ -68,7 +68,7 @@ extension FavoritesViewController : UICollectionViewDataSource {
         print("setup cell \(indexPath.row), using tip \(favIndex)")
         
         cell.title.text = tips[favIndex]?.title
-        cell.backgroundColorView.backgroundColor = .init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
+        cell.backgroundColorView.backgroundColor = .init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.75)
         cell.button.addTarget(self, action: #selector(openTip), for: .touchUpInside)
         cell.button.tag = Int(favIndex)!
         print("Nome passado: \(tips[favIndex]!.imgURL)")
@@ -80,21 +80,16 @@ extension FavoritesViewController : UICollectionViewDataSource {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Tip", bundle:nil)
         
         let selectedFavTip = storyBoard.instantiateViewController(withIdentifier: "Tip") as! TipViewController
-        //selectedFavTip.body.text = "abacaxi"
+        let key = String(sender.tag)
+        let tips = UserDefaults.Tips
+        
+        selectedFavTip.tipId = sender.tag
         
         self.navigationController?.pushViewController(selectedFavTip, animated: true)
         
         selectedFavTip.loadViewIfNeeded()
         
-        let tips = UserDefaults.Tips
-        let key = String(sender.tag)
-        let tag : Category = Tags.findTag(searchId: (tips[key]?.tag.sorted().first)!).rawValue
-        
-        selectedFavTip.tipId = Int(key)!
-        
-        selectedFavTip.loadViewIfNeeded()
-        
-        selectedFavTip.title = tag.name
+        selectedFavTip.title = Tags.findTag(searchId: (tips[key]?.tag.sorted().first)!).rawValue.name
         
         //        selectedFavTip.tipTitle.bottomAnchor.constraint(equalTo: selectedFavTip.btnFav.bottomAnchor).isActive = true
         
