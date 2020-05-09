@@ -12,10 +12,21 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
           super.awakeFromNib()
           // Initialization code
+        cornerRadiusfunc()
       }
     
     @IBOutlet weak var backgroundImage : UIImageView!
     @IBOutlet weak var backgroundColorView : UIView!
     @IBOutlet weak var title : UILabel!
     @IBOutlet weak var button : UIButton!
+
+
+    func cornerRadiusfunc () {
+        backgroundImage.layer.cornerRadius = 10.0;
+        backgroundImage.layer.masksToBounds = true;
+        backgroundColorView.layer.cornerRadius = 10.0;
+        backgroundColorView.layer.masksToBounds = true;
+    }
+
+
 }
