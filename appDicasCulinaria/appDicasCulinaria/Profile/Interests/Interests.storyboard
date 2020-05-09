@@ -21,7 +21,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-uR-IC8">
                                         <rect key="frame" x="8" y="0.0" width="398" height="930"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-Ac-ngu">
                                                 <rect key="frame" x="40.5" y="99" width="317.5" height="61"/>
                                                 <string key="text">Selecione os tópicos que você possui 
 interesse para que eles possam aparecer 
@@ -30,7 +30,7 @@ na sua tela inicial</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-2W-dKx" userLabel="btn_carnePerfeita">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-2W-dKx" userLabel="btn_carnePerfeita">
                                                 <rect key="frame" x="60" y="201" width="120" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -58,7 +58,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="ETU-On-cQ6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-92-SXH" userLabel="btn_SoVeggies">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-92-SXH" userLabel="btn_SoVeggies">
                                                 <rect key="frame" x="200" y="201" width="120" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -86,7 +86,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="a80-sY-06a"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEc-NV-YMx" userLabel="btn_ProcedimentosBasicos">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEc-NV-YMx" userLabel="btn_ProcedimentosBasicos">
                                                 <rect key="frame" x="70" y="271" width="240" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -114,7 +114,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="a4b-Fi-gSi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-zW-laB" userLabel="btn_MetodosCoccao">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-zW-laB" userLabel="btn_MetodosCoccao">
                                                 <rect key="frame" x="45" y="341" width="150" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -142,7 +142,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="chu-TE-aif"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-hG-KeZ" userLabel="btn_DiaDia">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-hG-KeZ" userLabel="btn_DiaDia">
                                                 <rect key="frame" x="215" y="341" width="120" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -170,7 +170,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="9uP-eU-vKl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-1y-Rwu" userLabel="btn_Substituicoes">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-1y-Rwu" userLabel="btn_Substituicoes">
                                                 <rect key="frame" x="59" y="411" width="120" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -198,7 +198,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="zUY-se-PL8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pip-m7-vjC" userLabel="btn_ComoCortar">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pip-m7-vjC" userLabel="btn_ComoCortar">
                                                 <rect key="frame" x="215" y="411" width="120" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -226,7 +226,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="fhr-t5-k0q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-r1-K4M" userLabel="btn_VistosRecentemente">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-r1-K4M" userLabel="btn_VistosRecentemente">
                                                 <rect key="frame" x="80" y="481" width="220" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -254,7 +254,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="dom-nU-OCs"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHI-J1-djh" userLabel="btn_PreAquecimento">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHI-J1-djh" userLabel="btn_PreAquecimento">
                                                 <rect key="frame" x="45" y="551" width="150" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -282,7 +282,7 @@ na sua tela inicial</string>
                                                     <action selector="selectInterest:" destination="NuI-Se-Yqw" eventType="touchUpInside" id="zz2-hT-MSD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-SG-mKb" userLabel="btn_Massas">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9M-SG-mKb" userLabel="btn_Massas">
                                                 <rect key="frame" x="215" y="551" width="140" height="50"/>
                                                 <color key="backgroundColor" red="0.78024488690000005" green="0.78007096050000002" blue="0.80069750549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -332,7 +332,6 @@ na sua tela inicial</string>
                                             <constraint firstItem="BPQ-zW-laB" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="45" id="eGS-iK-h5X"/>
                                             <constraint firstItem="NHI-J1-djh" firstAttribute="top" secondItem="YEh-r1-K4M" secondAttribute="bottom" constant="20" id="iIU-ko-xwV"/>
                                             <constraint firstItem="WJT-1y-Rwu" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="59" id="ipb-LG-TJV"/>
-                                            <constraint firstItem="jAd-Ac-ngu" firstAttribute="top" secondItem="cjh-uR-IC8" secondAttribute="top" constant="99" id="kbj-cO-3dX"/>
                                             <constraint firstItem="mEc-NV-YMx" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="70" id="xYx-kw-4sp"/>
                                             <constraint firstItem="Tue-2W-dKx" firstAttribute="leading" secondItem="cjh-uR-IC8" secondAttribute="leading" constant="60" id="yX0-Ca-1j7"/>
                                             <constraint firstItem="Tje-92-SXH" firstAttribute="top" secondItem="jAd-Ac-ngu" secondAttribute="bottom" constant="41" id="yld-qW-5xd"/>
