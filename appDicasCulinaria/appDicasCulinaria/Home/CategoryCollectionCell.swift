@@ -14,6 +14,7 @@ class CategoryCollectionCell : UICollectionViewCell, UICollectionViewDataSource,
     var category : Int!
     var filteredTips = [String : Tip]()
     var keys = [String]()
+    var categoryArray = [Int]()
     weak var delegate : CategoryCollectionViewController?
     
     let lblCategory : UILabel = {
@@ -75,37 +76,28 @@ class CategoryCollectionCell : UICollectionViewCell, UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        filteredTips = delegate?.tips.filter{ key, value in
-            (delegate?.tips[key]?.tag.contains(category!))!
-            } as! [String : Tip]
+        filteredTips = (delegate?.tips.filter{ key, value in
+                (delegate?.tips[key]?.tag.contains(category!))!
+            })! as [String : Tip]
         
-        print("4")
         keys = filteredTips.keys.sorted()
-        //        print(tips.filter { key, value in
-        //            (tips[key]?.tag.contains(category))!
-        //        }.count)
-        
-        //        print("total de dicas para a categoria \(category!): \(tips.count)")
+
         return filteredTips.count
-        
-        //        return tips.filter { key, value in
-        //            (tips[key]?.tag.contains(category))!
-        //        }.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print("5")
+        var keysInt = [Int]()
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! TipCollectionCell
         cell.delegate = delegate
-        
-        //        cell.backgroundColor = .red
+        keysInt = keys.map{ Int($0)! }
+        keysInt = keysInt.sorted()
+
         cell.contentView.isUserInteractionEnabled = false
-        cell.btnTip.tag = indexPath.row
-        //        print(tips.count)
-        //        print(UserDefaults.Interests.sorted().debugDescription)
-        //        print("index: \(indexPath.row)")
-        cell.lblTitle.text = filteredTips[keys[indexPath.row]]?.title
-        cell.key = keys[indexPath.row]
+        cell.btnTip.tag = keysInt[indexPath.row]
+            
+        cell.lblTitle.text = filteredTips[String(keysInt[indexPath.row])]?.title
+        cell.key = String(keysInt[(indexPath.row)])
+        
         return cell
     }
     

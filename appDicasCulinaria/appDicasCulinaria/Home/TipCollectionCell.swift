@@ -23,7 +23,8 @@ class TipCollectionCell : UICollectionViewCell {
     
     let imageView : UIImageView = {
         let iv = UIImageView()
-//        iv.image = UIImage(named: "placeholderImg")
+        //        iv.image = UIImage(named: "placeholderImg")
+        iv.backgroundColor = .init(red: 1.0, green: 0.63, blue: 0, alpha: 1.0)
         iv.frame = CGRect(x: 0, y: 0, width: 150, height: 200)
         iv.layer.cornerRadius = 10
         iv.contentMode = .scaleAspectFill
@@ -32,17 +33,18 @@ class TipCollectionCell : UICollectionViewCell {
     
     let backgroundColorView : UIView = {
         let view = UIView()
-        view.frame = CGRect(x: 0, y: 160, width: 150, height: 40)
+        view.frame = CGRect(x: 0, y: 138, width: 150, height: 62)
         view.layer.cornerRadius = 10
-        view.backgroundColor = .init(white: 0.5, alpha: 0.5)
+        view.backgroundColor = .init(white: 1, alpha: 0.7)
         return view
     }()
     
     let lblTitle : UILabel = {
         let lbl = UILabel()
         lbl.text = "Titulo"
-        lbl.font = UIFont.systemFont(ofSize: 14)
-        lbl.frame = CGRect(x: 10, y: 160, width: 140, height: 40)
+//        lbl.font = UIFont.systemFont(ofSize: 18)
+        lbl.adjustsFontSizeToFitWidth = true
+        lbl.frame = CGRect(x: 10, y: 140, width: 130, height: 56)
         lbl.numberOfLines = 0
         return lbl
     }()
@@ -51,8 +53,8 @@ class TipCollectionCell : UICollectionViewCell {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 150, height: 200)
         btn.layer.cornerRadius = 10
-        btn.layer.borderColor = .init(srgbRed: 0, green: 0, blue: 0, alpha: 1)//.init(srgbRed: 0.8, green: 0, blue: 0.8, alpha: 1.0)
-                btn.layer.borderWidth = 5
+        btn.layer.borderColor = .init(srgbRed: 1.0, green: 0.52, blue: 0, alpha: 1.0)
+        btn.layer.borderWidth = 3
         btn.isUserInteractionEnabled = true
         return btn
     }()
@@ -63,14 +65,15 @@ class TipCollectionCell : UICollectionViewCell {
         addSubview(lblTitle)
         addSubview(btnTip)
         
+        
         btnTip.addTarget(self, action: #selector(openTip(_:)), for: .touchUpInside)
     }
     
     @objc func openTip(_ sender: UIButton) {
-        print("entrou openTip pelo view controller")
         let storyBoard : UIStoryboard = UIStoryboard(name: "Tip", bundle:nil)
         
         let selectedTip = storyBoard.instantiateViewController(withIdentifier: "Tip") as! TipViewController
+        selectedTip.tipId = sender.tag
         
         delegate?.navigationController?.pushViewController(selectedTip, animated: true)
         
@@ -78,10 +81,8 @@ class TipCollectionCell : UICollectionViewCell {
         
         let key = String(sender.tag)
         
-        let tag : Category = Tags.findTag(searchId: (delegate?.tips[key]?.tag.sorted().first)!).rawValue
         
-        selectedTip.title = tag.name
-        
+        selectedTip.title = Tags.findTag(searchId: (delegate?.tips[key]?.tag.sorted().first)!).rawValue.name
         selectedTip.btnFav.topAnchor.constraint(equalTo: selectedTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
         selectedTip.tipTitle.topAnchor.constraint(equalTo: selectedTip.view.safeAreaLayoutGuide.topAnchor).isActive = true
         //        selectedFavTip.tipTitle.bottomAnchor.constraint(equalTo: selectedFavTip.btnFav.bottomAnchor).isActive = true
@@ -93,6 +94,5 @@ class TipCollectionCell : UICollectionViewCell {
         
         selectedTip.tipBody.text = delegate?.tips[key]?.text
         selectedTip.tipBody.frame.size.height = selectedTip.tipBody.intrinsicContentSize.height
-        print("saiu openTip")
     }
 }

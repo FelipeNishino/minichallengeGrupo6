@@ -17,27 +17,23 @@ class TipViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        btnFav.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        tipTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        btnFav.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        tipTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
     
         btnFav.addTarget(self, action: #selector(toggleFavorite), for: .touchUpInside)
         
+        print("check if favorited")
+        print(UserDefaults.Favorites.debugDescription, tipId)
         if UserDefaults.Favorites.contains(tipId) {
+            print(true)
             btnFav.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
         }
+        else {
+            print(false)
+        }
     }
-//    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//
-//        if self.isMovingFromParent {
-//            self.p
-//        }
-//    }
     
-    @objc func toggleFavorite() {
-        
-        
+    @objc func toggleFavorite() {     
         if UserDefaults.Favorites.contains(tipId) {
             defer {
                 print("tip \(tipId) unfavorited")
