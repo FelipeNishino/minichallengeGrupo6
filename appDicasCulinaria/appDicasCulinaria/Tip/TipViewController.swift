@@ -21,6 +21,7 @@ class TipViewController: UIViewController {
         tipTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
     
         btnFav.addTarget(self, action: #selector(toggleFavorite), for: .touchUpInside)
+        btnFav.tintColor = .systemRed
         
         print("check if favorited")
         print(UserDefaults.Favorites.debugDescription, tipId)

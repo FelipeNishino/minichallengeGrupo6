@@ -65,7 +65,7 @@
 		83CE34AC24467D3400854E98 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
 		E20565932465519800E79078 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tip.swift; path = ../Tip.swift; sourceTree = "<group>"; };
 		E2192C812465215400C7DB35 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		E25583AD243CFBEE00507D29 /* appDicasCulinaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDicasCulinaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25583AD243CFBEE00507D29 /* Crackin' Kitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crackin' Kitchen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25583B0243CFBEE00507D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25583B2243CFBEE00507D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E25583B7243CFBEE00507D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 		E25583AE243CFBEE00507D29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E25583AD243CFBEE00507D29 /* appDicasCulinaria.app */,
+				E25583AD243CFBEE00507D29 /* Crackin' Kitchen.app */,
 				E25583C3243CFBF200507D29 /* appDicasCulinariaTests.xctest */,
 				E25583CE243CFBF200507D29 /* appDicasCulinariaUITests.xctest */,
 			);
@@ -287,7 +287,7 @@
 			);
 			name = appDicasCulinaria;
 			productName = appDicasCulinaria;
-			productReference = E25583AD243CFBEE00507D29 /* appDicasCulinaria.app */;
+			productReference = E25583AD243CFBEE00507D29 /* Crackin' Kitchen.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E25583C2243CFBF200507D29 /* appDicasCulinariaTests */ = {
@@ -610,7 +610,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = minichallengeEduG6.appDicasCulinaria;
-				PRODUCT_NAME = appDicasCulinaria;
+				PRODUCT_NAME = "Crackin' Kitchen";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -628,7 +628,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = minichallengeEduG6.appDicasCulinaria;
-				PRODUCT_NAME = appDicasCulinaria;
+				PRODUCT_NAME = "Crackin' Kitchen";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

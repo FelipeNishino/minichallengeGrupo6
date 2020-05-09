@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Favorites-->
+        <!--Favoritos-->
         <scene sceneID="6UG-Y4-Btu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hjH-tI-9Bx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="9dC-Rh-J8m"/>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="star.fill" catalog="system" id="9dC-Rh-J8m"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pvy-XU-Y6o">

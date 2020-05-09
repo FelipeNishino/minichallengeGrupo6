@@ -86,7 +86,7 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8z-ZK-oHT">
-                                <rect key="frame" x="0.0" y="155" width="414" height="53"/>
+                                <rect key="frame" x="0.0" y="103" width="414" height="105"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -113,11 +113,11 @@
             </objects>
             <point key="canvasLocation" x="3218.840579710145" y="-129.24107142857142"/>
         </scene>
-        <!--Search-->
+        <!--Busca-->
         <scene sceneID="kkd-9v-Uvl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vHd-YC-IWR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="rwE-Lr-6YD"/>
+                    <tabBarItem key="tabBarItem" title="Busca" image="magnifyingglass" catalog="system" id="rwE-Lr-6YD"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="dAQ-QR-STX">

@@ -25,8 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             dict = [
 
-                "0" : Tip(title: "Evitando restos de farinha", text: "Quando for abrir uma massa e for necessitar de farinha para abrir a massa, coloque uma lâmina de filme plástico ou de celofane para churrasco sobre a superfície e coloque a farinha sobre o filme ou o celofane. Na hora de limpar, basta recolher o filme ou o celofane, evitando que a farinha fique depositada na pedra ou mesa. Dica da dica - se for utilizar o celofane, para evitar que ele escorregue sobre a superfície da pedra ou da mesa, adicione algumas gotas de água na superfície antes de colocar o celofane. Isto fará com que o celofane não escorregue.", tag: [2, 4, 9], fav: false, imgURL: "img14"),
-                "1" : Tip(title: "Guardando facas e objetos cortantes", text: "Guarde as facas e objetos cortantes com a lâmina virada para baixo em gavetas, e tente colocar uma faca ao lado da outra, de forma a facilitar o acesso ao cabo, evitando cortes. Dica da dica - facas e objetos pontiagudos podem ser colocados com as pontas e lâminas para baixo nos escorredores de talheres após a lavagem, evitando machucados.", tag: [2, 4], fav: false, imgURL: "img1"),
                 "0" : Tip(title: "Evitando restos de farinha", text: """
                             Quando for abrir uma massa e for necessitar de farinha para abrir a massa, coloque uma lâmina de filme plástico ou de celofane para churrasco sobre a superfície e coloque a farinha sobre o filme ou o celofane.
                             
@@ -70,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if userDefaults.object(forKey: "Favorites") == nil {
-            let fav : Set<Int> = [1, 2, 3, 4, 5, 6]
+            let fav : Set<Int> = [0, 1, 2]
             print("init fav set")
             print(fav.count, fav.debugDescription)
             UserDefaults.Favorites = fav
